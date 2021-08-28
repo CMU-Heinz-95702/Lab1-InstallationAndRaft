@@ -21,8 +21,9 @@ Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home
 directory.
-
+```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16-openj9.jdk/Contents/Home
+```
 
 On a Windows machine, add a JAVA_HOME environment variable. The value of this variable is the directory path where the JDK was installed.
 
