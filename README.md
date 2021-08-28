@@ -136,8 +136,7 @@ Run/Edit Configurations/Server/Open browser/URL
 
 **Part 4. Working with Raft**
 
-1)  [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html]{.ul}](https://raft.github.io/raftscope/index.html)
-    and experiment with it.
+1) [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html)and experiment with it.
 
 
 
