@@ -10,8 +10,7 @@ In this lab, you will install Open JDK, IntelliJ, and TomEE Plus. These tools wi
 
 Answers to the questions appear at the bottom of this lab.
 
-For those using a Windows operating system, you will need to show your
-TA that you are using a "Pro" version of Windows (not a "Home" version).
+For those using a Windows operating system, you will need to use a "Pro" version of Windows (not a "Home" version).
 
 **Part 1. Installation of Open JDK**
 
