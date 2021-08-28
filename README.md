@@ -1,5 +1,7 @@
 **95-702 Distributed Systems Lab 1**
 
+### Objectives:
+
 In this lab, you will install Open JDK, IntelliJ, and TomEE Plus. These
 tools will be used throughout much of the course. You will also solve
 some Raft puzzles and answer a question about proof of work and SHA256.
