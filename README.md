@@ -14,21 +14,21 @@ For those using a Windows operating system, you will need to use a "Pro" version
 
 **Part 1. Installation of Open JDK**
 
-When downloading the JDK and JRE, **do not** choose the defaults, rather be sure to choose Open JDK16 and Open J9. Run the appropriate installers for your operating system.
+When downloading the JDK, be sure to choose OpenJDK 16.
 
-[Download the current version of Java](https://adoptopenjdk.net/archive.html).
+[Download the current version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
 
-On a MAC, JAVA_HOME is set within the .bash_profile of your home
-directory.
+On a MAC, JAVA_HOME is set within the .bash_profile of your home directory.
 ```
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16-openj9.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home
+
 ```
 
 On a Windows machine, add a JAVA_HOME environment variable. The value of this variable is the directory path where the JDK was installed.
 
 To test your setup, open the command line shell. From the command line, javac -version and java -version should both
-report the version number as 16.X.X. Be sure that the versions of java and javac are identical. On my machine, I see 16.0.1 for both java and javac.
+report the version number as 16.X.X. Be sure that the versions of java and javac are identical. On my machine, I see 16.0.2 for both java and javac.
 
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
@@ -37,14 +37,16 @@ Establish your student credentials with JetBrains. [Download the free version of
 The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
-Write a Java program that displays "Hello World".
+When you create a new project, you should be able to select your new JDK.
 
+**Question 1**
+
+Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World".
 
 **Part 3. Installation of TomEE+**
 
-Visit
-[[http://tomee.apache.org/download-ng.html]{.ul}](http://tomee.apache.org/download-ng.html)
-and download the TomEE 8.x.x (e.g 8.0.4) version of **TomEE Plus**
+[Download TOMEE ](http://tomee.apache.org/download-ng.html)
+and download the TomEE 9.x.x (e.g 8.0.4) version of **TomEE Plus**
 (Note: "Plus", not "Plume".)
 
 Copy the TomEE directory to an appropriate directory on your file
@@ -178,3 +180,41 @@ Show your TA, by referring to the hash, that you have chosen the correct
 answer.
 
 Note: There are no newlines or return characters in the correct answer.
+
+**Answer to question 1**
+
+```
+package edu.cmu.andrew.yourID;
+
+import java.security.MessageDigest;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+        System.out.println("Hello World");
+        MessageDigest md = MessageDigest.getInstance("SHA-256");
+        md.update("Hello World".getBytes());
+        System.out.println(bytesToHex(md.digest()));
+    }
+
+    // Code from stack overflow
+    // https://stackoverflow.com/questions/9655181/how-to-convert-a-byte-array-to-a-hex-string-in-java
+    // Returns a hex string given an array of bytes
+    private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
+    public static String bytesToHex(byte[] bytes) {
+        char[] hexChars = new char[bytes.length * 2];
+        for (int j = 0; j < bytes.length; j++) {
+            int v = bytes[j] & 0xFF;
+            hexChars[j * 2] = HEX_ARRAY[v >>> 4];
+            hexChars[j * 2 + 1] = HEX_ARRAY[v & 0x0F];
+        }
+        return new String(hexChars);
+    }
+
+}
+/*  Output
+    Hello World
+    A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
+*/
+```
