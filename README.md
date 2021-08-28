@@ -46,7 +46,7 @@ Write a program that imports the MessageDigest class from the java.security pack
 **Part 3. Installation of TomEE+**
 
 [Download TOMEE ](http://tomee.apache.org/download-ng.html)
-and download the TomEE 9.x.x (e.g 8.0.4) version of **TomEE Plus**
+and download the TomEE 9 version of **TomEE Plus**
 (Note: "Plus", not "Plume".)
 
 Copy the TomEE directory to an appropriate directory on your file
