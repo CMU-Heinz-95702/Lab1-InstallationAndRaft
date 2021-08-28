@@ -32,7 +32,7 @@ report the version number as 16.X.X. Be sure that the versions of java and javac
 
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
-Establish your student credentials with JetBrains. [Download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/](https://www.jetbrains.com/student/).
+Establish your student credentials with JetBrains. [Download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/).
 Download and install the latest IntelliJ IDEA Ultimate.
 
 Write a Java program that displays "Hello World".
