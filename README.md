@@ -2,7 +2,7 @@
 
 You are not required to submit your work for this lab. But, to make progress on the projects and to perform well on the exams, it is essential that you complete it.
 
-If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours.
+If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
 ### Objectives:
 
