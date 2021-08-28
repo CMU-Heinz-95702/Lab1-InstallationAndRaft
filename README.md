@@ -1,4 +1,4 @@
-**95-702 Distributed Systems Lab 1**
+## 95-702 Distributed Systems Lab 1
 
 ### Objectives:
 
