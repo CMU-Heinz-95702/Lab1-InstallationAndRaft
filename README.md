@@ -14,10 +14,9 @@ For those using a Windows operating system, you will need to use a "Pro" version
 
 **Part 1. Installation of Open JDK**
 
+When downloading the JDK and JRE, **do not** choose the defaults, rather be sure to choose Open JDK16 and Open J9. Run the appropriate installers for your operating system.
+
 [Download the current version of Java](https://adoptopenjdk.net/archive.html).
-
-Do **not** choose the defaults, rather be sure to choose Open JDK16 and Open J9. Run the appropriate installers for your operating system.
-
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home
