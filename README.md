@@ -136,8 +136,19 @@ Run/Edit Configurations/Server/Open browser/URL
 
 **Part 4. Working with Raft**
 
-1) [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html)and experiment with it.
+1) [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
+Set the bottom rail to 1/100x.
+Set the upper rail to the far left of the rail. This is time 0.
+One of the followers will time out and request votes.
+A leader will be selected.
+Click the leader and make a request to it.
+Make many requests from the same leader. How many requests
+are actually shown in the display? (barely see request 11).
+
+2)	Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
+
+<img src="https://github.com/mm6/InternetOfThingsCourse/blob/master/images/Hello_Michael_LightBlue.jpg" alt="BLE Greeting" width="400" height="800"/>
 
 
 3)  Working with a fresh copy of the Raft simulator, do the following:
@@ -148,13 +159,10 @@ B.  Stop one of the followers.
 
 C.  Send four requests from the leader to the remaining followers.
 
-D.  Resume the stopped follower. Explain to your TA what happened.
+D.  Resume the stopped follower.
 
 4)  Working with a fresh copy of the Raft simulator, do the following:
 
-```{=html}
-<!-- -->
-```
 A.  Wait until a single leader is established.
 
 B.  Stop three of the four followers.
