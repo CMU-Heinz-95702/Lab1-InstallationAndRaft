@@ -33,11 +33,12 @@ report the version number as 16.X.X. Be sure that the versions of java and javac
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
 Establish your student credentials with JetBrains. [Download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/).
+
+The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
 Write a Java program that displays "Hello World".
 
-Show this running program to your TA.
 
 **Part 3. Installation of TomEE+**
 
