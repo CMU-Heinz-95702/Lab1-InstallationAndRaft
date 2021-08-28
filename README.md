@@ -1,36 +1,35 @@
 ## 95-702 Distributed Systems Lab 1
 
+You are not required to submit your work for this lab. But, to make progress on the projects and to perform well on the exams, it is essential that you complete it.
+
+If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours.
+
 ### Objectives:
 
-In this lab, you will install Open JDK, IntelliJ, and TomEE Plus. These
-tools will be used throughout much of the course. You will also solve
-some Raft puzzles and answer a question about proof of work and SHA256.
+In this lab, you will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. You will also solve some Raft puzzles and answer questions about proof of work and SHA256.
+
+Answers to the questions appear at the bottom of this lab.
 
 For those using a Windows operating system, you will need to show your
 TA that you are using a "Pro" version of Windows (not a "Home" version).
 
 **Part 1. Installation of Open JDK**
 
-Visit <https://adoptopenjdk.net/archive.html>.
+[Download the current version of Java](https://adoptopenjdk.net/archive.html).
 
-Do **not** choose the defaults, rather be sure to choose Open JDK12 and
-Open J9.
-
-Download and run the JDK installer for jdk-12.0.2+10.2_openj9-0.15.1
-
-Download and run the JRE installer for jdk-12.0.2+10.2_openj9-0.15.1
+Do **not** choose the defaults, rather be sure to choose Open JDK16 and Open J9. Run the appropriate installers for your operating system.
 
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home
 directory.
 
-exportJAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-12-openj9.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-16-openj9.jdk/Contents/Home
 
-From the command line, javac -version and java -version should both
-report the version number as 12.
+On a Windows machine, add a JAVA_HOME environment variable. The value of this variable is the directory path where the JDK was installed.
 
-Show your TA that your command line java commands are correct.
+To test your setup, open the command line shell. From the command line, javac -version and java -version should both
+report the version number as 16.X.X. Be sure that the versions of java and javac are identical. On my machine, I see 16.0.1 for both java and javac.
 
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
