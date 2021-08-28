@@ -53,7 +53,23 @@ Copy the TomEE directory to an appropriate directory on your file
 system. The directory path should contain no spaces. Do not change the
 name of the TomEE Plus directory.
 
-1.  Open IntelliJ and create a new project.
+Get A hello world web site to run
+
+1.  Open IntelliJ and choose File/New Project.
+
+2.  Assign the name field: FirstWebProject
+
+3.  Assign the Project Template field: Web Application
+
+4.  Assign the Application Server field: TomEE 9
+
+5.  Select Java, Maven, JUnit
+
+6.  The group is cmu.edu.andrew
+
+7.  The Project SDK should be your new JDK.
+
+8.  Under specifications, select servlet.
 
 2.  Under Java/ Java EE /select Web Application
 
@@ -103,9 +119,7 @@ response.getWriter().append(\"Hello from TestServlet \");
 
 > 18\. A browser runs and you should see Hello from TestServlet.
 
-Show your TA your browser visiting the TestServlet.
 
-This is the checkmark for this lab.
 
 While testing, leave the following settings alone. You should just work
 from
@@ -122,25 +136,13 @@ Run/Edit Configurations/Server/Open browser/URL
 
 **Part 4. Working with Raft**
 
-1)  Visit
-    [[https://raft.github.io/raftscope/index.html]{.ul}](https://raft.github.io/raftscope/index.html)
-    and play with the Raft simulator.
+1)  [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html]{.ul}](https://raft.github.io/raftscope/index.html)
+    and experiment with it.
 
-2)  Show your TA that you were able to get the Raft simulator to show
-    the following replicated logs. Note, the final server need not be
-    S1. The only requirement is that each log is identical to the one
-    shown in Figure 1.
 
-> ![](media/image1.png){width="3.165790682414698in"
-> height="2.7038899825021874in"}
->
-> Figure 1: Answer to question 7
 
 3)  Working with a fresh copy of the Raft simulator, do the following:
 
-```{=html}
-<!-- -->
-```
 A.  Send two requests from the leader to all followers.
 
 B.  Stop one of the followers.
