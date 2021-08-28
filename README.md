@@ -32,8 +32,7 @@ report the version number as 16.X.X. Be sure that the versions of java and javac
 
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
-Establish your student credentials with JetBrains for the free version
-of IntelliJ for educational use:
+Establish your student credentials with JetBrains. For the free version of IntelliJ for educational use visit:
 [[https://www.jetbrains.com/student/](https://www.jetbrains.com/student/).
 Download and install the latest IntelliJ IDEA Ultimate.
 
