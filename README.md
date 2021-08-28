@@ -41,11 +41,11 @@ When you create a new project, you should be able to select your new JDK.
 
 **Question 1**
 
-Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World".
+Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
 **Part 3. Installation of TomEE+**
 
-[Download TOMEE ](http://tomee.apache.org/download-ng.html)
+[Visit Apache TOMEE ](http://tomee.apache.org/download-ng.html)
 and download the TomEE 9 version of **TomEE Plus**
 (Note: "Plus", not "Plume".)
 
