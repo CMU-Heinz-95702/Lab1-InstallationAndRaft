@@ -6,9 +6,9 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will solve some Raft puzzles and answer questions about proof of work and SHA256.
+In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will solve some Raft puzzles and answer questions about proof of work and SHA256. There will be a few exercises along the way.
 
-Answers to the questions appear at the bottom of this lab.
+Answers to the exercises appear at the bottom of this lab.
 
 For those using a Windows operating system, you will need to use a "Pro" version of Windows (not a "Home" version).
 
