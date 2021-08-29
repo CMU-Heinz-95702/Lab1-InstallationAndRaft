@@ -154,17 +154,16 @@ A leader will be selected. Let's call the first leader L.
 Click the leader L and make a request to it.
 
 ***
-**Exercise 3**
+**Exercise 5**
 
 Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the the leader visits twice - once with the request and then a follow up confirmation.
 
 ***
 
 
-Make many requests from the same leader. How many requests
-are actually shown in the display? 
+Make many requests from the same leader. Perform more than 11 requests to leader L and watch the logs on each peer grow. Experiment with the top slider. Drag it left to go back in time.  
 
-2)	Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
+2)	Refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
 
 <img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>
 
