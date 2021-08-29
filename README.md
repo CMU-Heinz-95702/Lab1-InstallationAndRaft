@@ -6,7 +6,7 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And foutht, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
+In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And fourth, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
 
 Answers to the exercises appear at the bottom of this lab.
 
