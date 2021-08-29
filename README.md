@@ -6,13 +6,13 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will complete some small programming exercises and some exercises using the Raft simulator.
+In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And foutht, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
 
 Answers to the exercises appear at the bottom of this lab.
 
 For those using a Windows operating system, you will need to use a "Pro" version of Windows (not a "Home" version).
 
-**Part 1. Installation of Open JDK**
+#### Part 1. Installation of Open JDK
 
 When downloading the JDK, be sure to choose OpenJDK 16.
 
@@ -30,7 +30,7 @@ On a Windows machine, add a JAVA_HOME environment variable. The value of this va
 To test your setup, open the command line shell. From the command line, javac -version and java -version should both
 report the version number as 16.X.X. Be sure that the versions of java and javac are identical. On my machine, I see 16.0.2 for both java and javac.
 
-**Part 2. Installation of IntelliJ IDEA Ultimate**
+#### Part 2. Installation of IntelliJ IDEA Ultimate
 
 Establish your student credentials with JetBrains and [download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/).
 
@@ -57,7 +57,7 @@ Write a program that imports the MessageDigest class from the java.security pack
 Do you get the same answer form the calculator that you got from the Java program?
 ***
 
-**Part 3. Installation of TomEE+**
+#### Part 3. Installation of TomEE+
 
 [Visit Apache TOMEE ](http://tomee.apache.org/download-ng.html)
 and download the TomEE 9 version of **TomEE Plus**
@@ -149,7 +149,7 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
-**Part 4. Working with Raft**
+#### Part 4. Working with Raft
 
 1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
@@ -203,7 +203,7 @@ Explain what happened and why.
 Explain what happened and why. Also, explain what happens if the three followers are started back up.
 ***
 
-**Part 5. Working with hashes**
+#### Part 5. Working with hashes
 
 In the slides on Nakamoto consensus, see
 [1_Blockchain_Raft_and_Nakamoto.pdf](https://canvas.cmu.edu/courses/19194/files/5122183/download?wrap=1),
