@@ -162,7 +162,7 @@ Explain why the request is not committed on the peers (with dark edges surroundi
 
 
 Make many requests from the same leader. How many requests
-are actually shown in the display? (barely see request 11).
+are actually shown in the display? 
 
 2)	Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
 
