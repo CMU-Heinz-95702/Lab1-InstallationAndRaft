@@ -123,7 +123,7 @@ in the top right of the IDE.
 
 9. Select Apply and OK.
 
-10. Select the green Run triangle.
+10. To run your web application, click the green triangle.
 
 11. A test browser should run with Hello World.
 
