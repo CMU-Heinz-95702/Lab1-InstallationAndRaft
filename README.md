@@ -39,7 +39,7 @@ Download and install the latest IntelliJ IDEA Ultimate.
 
 When you create a new project, you should be able to select your new JDK.
 
-**Question 1**
+**Exercise 1**
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
@@ -190,7 +190,10 @@ answer.
 
 Note: There are no newlines or return characters in the correct answer.
 
-**Answer to question 1**
+## Answers to Exercises
+
+**Excersise 1**
+
 
 ```
 package edu.cmu.andrew.yourID;
