@@ -107,10 +107,14 @@ system. The directory path should contain no spaces. Do not change the name of t
 ```
 5. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-6. Choose File/Project Structure/
-   Name: HelloWorld
-   Project: Project SDK 16
-   Platform Settings: SDK's choose 16
+6. Choose File/Project Structure/  
+
+   Name: HelloWorld  
+
+   Project: Project SDK 16  
+
+   Platform Settings: SDK's choose 16  
+   
    Select OK.
 
 7. Select Edit Configurartions. The Edit Configurations is found by clicking the down arrow just to the right of TomEE 10.0.41
