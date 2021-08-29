@@ -6,7 +6,7 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will complete some small programming exercises and some exercises using the Raft simulator. 
+In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will complete some small programming exercises and some exercises using the Raft simulator.
 
 Answers to the exercises appear at the bottom of this lab.
 
@@ -32,7 +32,7 @@ report the version number as 16.X.X. Be sure that the versions of java and javac
 
 **Part 2. Installation of IntelliJ IDEA Ultimate**
 
-Establish your student credentials with JetBrains. [Download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/).
+Establish your student credentials with JetBrains and [download the free version of IntelliJ for educational use](https://www.jetbrains.com/student/).
 
 The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
