@@ -174,6 +174,7 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 
 <img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>
 
+Figure 1
 
 7. Working with a fresh copy of the Raft simulator, do the following:
 
