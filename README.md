@@ -105,7 +105,7 @@ system. The directory path should contain no spaces. Do not change the name of t
             <scope>provided</scope>
         </dependency>
 ```
-5. The jakarta.platform may be in red. Got to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
+5. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
 6. Choose File/Project Structure/
    Name: HelloWorld
