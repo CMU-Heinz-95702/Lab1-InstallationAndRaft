@@ -142,7 +142,6 @@ Modify your JSP file so that the browser displays the link
 with the label "Compute Hash" instead of "Hello World".
 ***
 
-***
 **Exercise 4**
 
 Modify the servlet code so that, when visited, it displays
@@ -201,8 +200,9 @@ Explain what happened and why.
 
 ***
 **Exercise 7**
-Explain what happened and why.
+Explain what happened and why. Also, explain what happens if the three followers are started back up.
 ***
+
 **Part 5. Working with hashes**
 
 In the slides on Nakamoto consensus, see
@@ -333,4 +333,13 @@ public class HelloServlet extends HttpServlet {
 Answer: None of the nodes commit the request until a majority of nodes have voted to commit the request. So, simply receiving the request and responding with a vote is not enough. The peer must wait until the server counts the votes and affirms that a majority says to commit.
 
 **Exercise 6 Answer**
-TBD
+The additional four requests were not replicated to the stopped follower. But, when the follower came back online, the algorithm brought the follower up to date with the correct replica.
+
+**Exercise 7 Answer**
+The three request are being held by two machine as tentative and not committed. There is no majority support for these requests.
+When the three followers are resumed, they are told of the three requests and the entire cluster comes into consensus.
+
+**Exercise 8 Answer**
+109346,5,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+
+When hashed with SHA-256, has five, leftmost zeroes.
