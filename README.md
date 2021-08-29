@@ -87,7 +87,11 @@ system. The directory path should contain no spaces. Do not change the name of t
 1. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
 2. Under webapp you should find index.jsp.
 3. Under webapp/WEB-INF you should find web.xml.
-4. Change your pom.xml by replacing
+4. The file pom.xml is near the root of the hierarchy.
+
+**More configurations**
+
+5. Change your pom.xml by replacing
 ```
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -105,9 +109,9 @@ system. The directory path should contain no spaces. Do not change the name of t
             <scope>provided</scope>
         </dependency>
 ```
-5. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
+6. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-6. Choose File/Project Structure/  
+7. Choose File/Project Structure/  
 
    Project Name: HelloWorld  
 
@@ -117,17 +121,17 @@ system. The directory path should contain no spaces. Do not change the name of t
 
    Select OK.
 
-7. Select Edit Configurartions. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
+8. Select Edit Configurartions. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
-8. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
+9. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
 
-9. Select Apply and OK.
+10. Select Apply and OK.
 
-10. To run your web application, click the green triangle.
+11. To run your web application, click the green triangle.
 
-11. A test browser should run with Hello World.
+12. A test browser should run with Hello World.
 
-12. In addition, you should also be able to select and run your servlet.
+13. In addition, you should also be able to select and run your servlet.
 
 **Exercise 3**
 
@@ -142,16 +146,16 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 **Part 4. Working with Raft**
 
-1) [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
+1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
-Set the bottom rail to 1/100x. This rail controls the speed of the simulator.
+2. Set the bottom rail to 1/100x. This rail controls the speed of the simulator.
 
-Set the upper rail to the far left. This is time 0. The simulator allows you to pause execution of the distributed algorithm and go back in time to time 0.
+3. Set the upper rail to the far left. This is time 0. The simulator allows you to pause execution of the distributed algorithm and go back in time to time 0.
 
-One of the followers will time out and request votes.
+4. One of the followers will time out and request votes.
 A leader will be selected. Let's call the first leader L.
 
-Click the leader L and make a request to it.
+5. Click the leader L and make a request to it.
 
 ***
 **Exercise 5**
@@ -163,12 +167,12 @@ Explain why the request is not committed on the peers (with dark edges surroundi
 
 Make many requests from the same leader. Perform more than 11 requests to leader L and watch the logs on each peer grow. Experiment with the top slider. Drag it left to go back in time.  
 
-2)	Refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
+6.	Refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in Figure 1.
 
 <img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>
 
 
-3)  Working with a fresh copy of the Raft simulator, do the following:
+7. Working with a fresh copy of the Raft simulator, do the following:
 
 A.  Send two requests from the leader to all followers.
 
@@ -178,7 +182,7 @@ C.  Send four requests from the leader to the remaining followers.
 
 D.  Resume the stopped follower.
 
-4)  Working with a fresh copy of the Raft simulator, do the following:
+8. Working with a fresh copy of the Raft simulator, do the following:
 
 A.  Wait until a single leader is established.
 
