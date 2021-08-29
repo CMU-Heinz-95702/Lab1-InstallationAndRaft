@@ -330,7 +330,7 @@ public class HelloServlet extends HttpServlet {
 ```
 
 **Exercise 5 Answer**
-Answer: None of the nodes commit the request until a majority of nodes have voted to commit the request. So, simply receiving the request and responding with a vote is not enough. The peer must wait until the server counts the votes and affirms that a majority says to commit.
+None of the nodes commit the request until a majority of nodes have voted to commit the request. So, simply receiving the request and responding with a vote is not enough. The peer must wait until the server counts the votes and affirms that a majority says to commit.
 
 **Exercise 6 Answer**
 The additional four requests were not replicated to the stopped follower. But, when the follower came back online, the algorithm brought the follower up to date with the correct replica.
