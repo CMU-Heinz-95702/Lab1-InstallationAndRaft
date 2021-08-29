@@ -163,7 +163,7 @@ A leader will be selected. Let's call the first leader L.
 ***
 **Exercise 5**
 
-Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the the leader visits twice - once with the request and then a follow up confirmation.
+Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the leader visits twice - once with the request and then a follow up confirmation.
 
 ***
 
