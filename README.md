@@ -194,12 +194,10 @@ In the slides on Nakamoto consensus, see
 [1_Blockchain_Raft_and_Nakamoto.pdf](https://canvas.cmu.edu/courses/19194/files/5122183/download?wrap=1),
 there is a quiz question that asks:
 
-Quiz: Which of the blocks on the right can be\
-the next block in the chain of length 2?\
-Format: Nonce, Difficulty, id, Tx1, Tx2, HashPointer
+Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
 
 **Exercise 6**
-Use the SHA256 calculator that you used before to answer the quiz question on the slides.
+[Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
 
