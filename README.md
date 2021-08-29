@@ -78,9 +78,9 @@ system. The directory path should contain no spaces. Do not change the name of t
 8. Java, Maven, JUNit should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
-10. Project SDK: 16
-11. Next and select Version: Jakarta EE 9 on the top left.
-12. Select the servlet box and then Finish.
+11. Project SDK: 16
+12. Next and select Version: Jakarta EE 9 on the top left.
+13. Select the servlet box and then Finish.
 
 **The Project Window**
 
@@ -89,7 +89,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 3. Under webapp/WEB-INF you should find web.xml.
 4. The file pom.xml is near the root of the hierarchy.
 
-**More configurations**
+**Steps 5 and 6 are optional if you did not select Jakarta in step 12.**
 
 5. Change your pom.xml by replacing
 
@@ -124,7 +124,7 @@ with this:
 
    Select OK.
 
-8. Select Edit Configurartions. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
+8. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
 9. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
 
