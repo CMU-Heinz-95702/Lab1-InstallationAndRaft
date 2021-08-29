@@ -198,12 +198,10 @@ Quiz: Which of the blocks on the right can be\
 the next block in the chain of length 2?\
 Format: Nonce, Difficulty, id, Tx1, Tx2, HashPointer
 
-Use the SHA256 calculator at this URL:
+**Exercise 6**
+Use the SHA256 calculator that you used before to answer the quiz question on the slides.
 
 <https://www.xorbin.com/tools/sha256-hash-calculator>,
-
-Show your TA, by referring to the hash, that you have chosen the correct
-answer.
 
 Note: There are no newlines or return characters in the correct answer.
 
