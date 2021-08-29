@@ -88,19 +88,23 @@ system. The directory path should contain no spaces. Do not change the name of t
 2. Under webapp you should find index.jsp.
 3. Under webapp/WEB-INF you should find web.xml.
 4. Change your pom.xml by replacing
+```
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
+```
         with this:
+```
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
             <version>9.0.0</version>
             <scope>provided</scope>
         </dependency>
+```
 5. The jakarta.platform may be in red. Got to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
 6. Choose File/Project Structure/
