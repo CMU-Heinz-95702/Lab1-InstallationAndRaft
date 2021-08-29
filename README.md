@@ -201,8 +201,6 @@ Format: Nonce, Difficulty, id, Tx1, Tx2, HashPointer
 **Exercise 6**
 Use the SHA256 calculator that you used before to answer the quiz question on the slides.
 
-<https://www.xorbin.com/tools/sha256-hash-calculator>,
-
 Note: There are no newlines or return characters in the correct answer.
 
 ## Answers to Exercises
