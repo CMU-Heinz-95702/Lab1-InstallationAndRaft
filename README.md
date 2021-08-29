@@ -113,7 +113,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 
    Project: Project SDK 16  
 
-   Platform Settings: SDK's choose 16  
+   Platform Settings: SDK's choose 16 (Records, patterns...  
 
    Select OK.
 
