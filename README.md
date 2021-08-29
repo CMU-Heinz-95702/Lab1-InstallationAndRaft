@@ -6,7 +6,7 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. You will also solve some Raft puzzles and answer questions about proof of work and SHA256.
+In this lab, you will do two things: (1) install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. And (2) you will solve some Raft puzzles and answer questions about proof of work and SHA256.
 
 Answers to the questions appear at the bottom of this lab.
 
@@ -37,102 +37,97 @@ Establish your student credentials with JetBrains. [Download the free version of
 The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
-When you create a new project, you should be able to select your new JDK.
+Create a simple Java project:
+1. File/New Project/Project SDK Browse to version 16
+2. Next/Check Create Project From Template
+3. Next/Name is Lab1Project/Base Project is edu.cmu.andrew.YOURID
+4. Finish
+5. Enter some Java source and use the green triangle to compile and execute.
 
+***
 **Exercise 1**
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
+***
+
+**Exercise 2**
+
+[Visit this SHA256 calculator](https://emn178.github.io/online-tools/sha256.html).
+
+Do you get the same answer form the calculator that you got from the Java program?
+***
 
 **Part 3. Installation of TomEE+**
 
 [Visit Apache TOMEE ](http://tomee.apache.org/download-ng.html)
 and download the TomEE 9 version of **TomEE Plus**
-(Note: "Plus", not "Plume".)
+(Note: "Plus", not "Plume".) Later, you may see TomEE 10 in the IDE - even though you have installed 9. No worries.
 
 Copy the TomEE directory to an appropriate directory on your file
-system. The directory path should contain no spaces. Do not change the
-name of the TomEE Plus directory.
+system. The directory path should contain no spaces. Do not change the name of the TomEE Plus directory.
 
-Get A hello world web site to run
+**Configure a "Hello World" web site:**
 
-1.  Open IntelliJ and choose File/New Project.
+1. Choose New Project.
+2. Choose Java Enterprise.
+3. Name: HelloWorld
+4. Change the location if appropriate.
+5. Project Template: Select Web Application
+6. Application server: Click new
+7. From TomEE Server, browse to your TomEE home directory and select OK.
+8. Java, Maven, JUNit should be checked.
+9. Set your group to ds
+10. Your artifact should already be set to HelloWorld.
+10. Project SDK: 16
+11. Next and select Version: Jakarta EE 9 on the top left.
+12. Select the servlet box and then Finish.
 
-2.  Assign the name field: FirstWebProject
+**The Project Window**
 
-3.  Assign the Project Template field: Web Application
+1. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
+2. Under webapp you should find index.jsp.
+3. Under webapp/WEB-INF you should find web.xml.
+4. Change your pom.xml by replacing
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        with this:
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>9.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+5. The jakarta.platform may be in red. Got to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-4.  Assign the Application Server field: TomEE 9
+6. Choose File/Project Structure/
+   Name: HelloWorld
+   Project: Project SDK 16
+   Platform Settings: SDK's choose 16
+   Select OK.
 
-5.  Select Java, Maven, JUnit
+7. Select Edit Configurartions. The Edit Configurations is found by clicking the down arrow just to the right of TomEE 10.0.41
+in the top right of the IDE.
+8. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
+9. Select the green Run triangle.
 
-6.  The group is cmu.edu.andrew
+10. A test browser should run with Hello World.
 
-7.  The Project SDK should be your new JDK.
+11. In addition, you should also be able to select and run your servlet.
 
-8.  Under specifications, select servlet.
+**Exercise 3**
 
-2.  Under Java/ Java EE /select Web Application
+Modify your JSP file so that the browser displays the string
+"Front Page" instead of "Hello World".
 
-3.  Select Next and name your project TestWebApp
+**Exercise 4**
 
-4.  Right click src and create a new servlet
+Modify the servlet code so that, when visited, it displays
+the SHA-256 Hex string of "Hello World" on the browser.
 
-5.  Give it the name TestServlet in the package
-    edu.cmu.andrew.yourAndrewID
-
-6.  Select OK
-
-7.  In the web.xml file, after the servlet element, create a servlet
-    mapping element as shown here:
-
-\<servlet-mapping>
-
-\<servlet-name>TestServlet\</servlet-name>
-
-\<url-pattern>/\*\</url-pattern>
-
-\</servlet-mapping>
-
-8.  Open the TestServlet in the src directory. Within the doGet method,
-    add this line of code:
-
-response.getWriter().append(\"Hello from TestServlet \");
-
-9.  Select Run/Edit Configurations/+/TomEE Server/Local
-
-10. Name the server MyTomEE
-
-11. Select Configure
-
-12. In TomEE text box, select the folder on the far right.
-
-13. Select open after browsing to the apache-tomee-plus directory.
-    Select OK.
-
-14. Select Deployment and click Fix in the bottom right and then OK.
-
-15. Select File/Project Structure/Project Settings/Libraries/+/Java
-
-16. Navigate to TomEE plus directory and select lib/apply/OK
-
-17. Select the green Run triangle.
-
-> 18\. A browser runs and you should see Hello from TestServlet.
-
-
-
-While testing, leave the following settings alone. You should just work
-from
-
-the defaults provided.
-
-You can set the URL with:
-
-Run/Edit Configurations/Deployment/Application Context
-
-The test browser visits the location specified at:
-
-Run/Edit Configurations/Server/Open browser/URL
 
 **Part 4. Working with Raft**
 
@@ -147,11 +142,13 @@ A leader will be selected. Let's call the first leader L.
 
 Click the leader L and make a request to it.
 
-**Exercise 2**
+***
+**Exercise 3**
 
 Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the the leader visits twice - once with the request and then a follow up confirmation.
 
----
+***
+
 
 Make many requests from the same leader. How many requests
 are actually shown in the display? (barely see request 11).
@@ -202,7 +199,7 @@ Note: There are no newlines or return characters in the correct answer.
 
 ## Answers to Exercises
 
-**Exercise 1**
+**Exercise 1 Answer**
 
 
 ```
@@ -240,5 +237,16 @@ public class Main {
     A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
 */
 ```
-****Exercise 2**
+**Exercise 2**
+
+Yes. Any correct SHA-256 calculator will provide the same value as that generated by the Java program.
+
+**Exercise 3**
+<h1><%= "Front Page" %>
+
+**Exercise 4**
+
+
+
+**Exercise 3**
 Answer: None of the nodes commit the request until a majority of nodes have voted to commit the request. So, simply receiving the request and responding with a vote is not enough. The peer must wait until the server counts the votes and affirms that a majority says to commit.
