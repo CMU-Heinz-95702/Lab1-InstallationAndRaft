@@ -138,11 +138,21 @@ Run/Edit Configurations/Server/Open browser/URL
 
 1) [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
-Set the bottom rail to 1/100x.
-Set the upper rail to the far left of the rail. This is time 0.
+Set the bottom rail to 1/100x. This rail controls the speed of the simulator.
+
+Set the upper rail to the far left. This is time 0. The simulator allows you to pause execution of the distributed algorithm and go back in time to time 0.
+
 One of the followers will time out and request votes.
-A leader will be selected.
-Click the leader and make a request to it.
+A leader will be selected. Let's call the first leader L.
+
+Click the leader L and make a request to it.
+
+**Exercise 2**
+
+Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the the leader visits twice - once with the request and then a follow up confirmation.
+
+---
+
 Make many requests from the same leader. How many requests
 are actually shown in the display? (barely see request 11).
 
@@ -192,7 +202,7 @@ Note: There are no newlines or return characters in the correct answer.
 
 ## Answers to Exercises
 
-**Excersise 1**
+**Exercise 1**
 
 
 ```
@@ -230,3 +240,5 @@ public class Main {
     A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
 */
 ```
+****Exercise 2**
+Answer: None of the nodes commit the request until a majority of nodes have voted to commit the request. So, simply receiving the request and responding with a vote is not enough. The peer must wait until the server counts the votes and affirms that a majority says to commit.
