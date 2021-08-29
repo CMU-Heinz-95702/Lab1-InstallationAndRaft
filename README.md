@@ -74,7 +74,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 4. Change the location if appropriate.
 5. Project Template: Select Web Application
 6. Application server: Click new
-7. From TomEE Server, browse to your TomEE home directory and select OK.
+7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M7
 8. Java, Maven, JUNit should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
