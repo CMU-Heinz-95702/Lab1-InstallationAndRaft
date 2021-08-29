@@ -135,17 +135,20 @@ in the top right of the IDE.
 12. A test browser should run with Hello World.
 
 13. In addition, you should also be able to select and run your servlet.
-
+***
 **Exercise 3**
 
 Modify your JSP file so that the browser displays the string
 "Front Page" instead of "Hello World".
+***
 
+***
 **Exercise 4**
 
 Modify the servlet code so that, when visited, it displays
 the SHA-256 Hex string of "Hello World" on the browser.
 
+***
 
 **Part 4. Working with Raft**
 
