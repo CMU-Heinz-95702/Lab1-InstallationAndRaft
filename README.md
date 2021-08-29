@@ -120,11 +120,14 @@ system. The directory path should contain no spaces. Do not change the name of t
 7. Select Edit Configurartions. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
 8. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
-9. Select the green Run triangle.
 
-10. A test browser should run with Hello World.
+9. Select Apply and OK.
 
-11. In addition, you should also be able to select and run your servlet.
+10. Select the green Run triangle.
+
+11. A test browser should run with Hello World.
+
+12. In addition, you should also be able to select and run your servlet.
 
 **Exercise 3**
 
