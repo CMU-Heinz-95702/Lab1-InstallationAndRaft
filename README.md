@@ -92,6 +92,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 **More configurations**
 
 5. Change your pom.xml by replacing
+
 ```
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -100,7 +101,9 @@ system. The directory path should contain no spaces. Do not change the name of t
             <scope>provided</scope>
         </dependency>
 ```
-        with this:
+
+with this:
+
 ```
         <dependency>
             <groupId>jakarta.platform</groupId>
