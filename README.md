@@ -109,12 +109,12 @@ system. The directory path should contain no spaces. Do not change the name of t
 
 6. Choose File/Project Structure/  
 
-   Name: HelloWorld  
+   Project Name: HelloWorld  
 
    Project: Project SDK 16  
 
    Platform Settings: SDK's choose 16  
-   
+
    Select OK.
 
 7. Select Edit Configurartions. The Edit Configurations is found by clicking the down arrow just to the right of TomEE 10.0.41
