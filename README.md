@@ -177,24 +177,29 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 
 7. Working with a fresh copy of the Raft simulator, do the following:
 
-A.  Send two requests from the leader to all followers.
+- a. Send two requests from the leader to all followers.
 
-B.  Stop one of the followers.
+- b. Stop one of the followers.
 
-C.  Send four requests from the leader to the remaining followers.
+- c. Send four requests from the leader to the remaining followers.
 
-D.  Resume the stopped follower.
-
+- d. Resume the stopped follower.
+***
+**Exercise 6**
+Explain what happened and why.
+***
 8. Working with a fresh copy of the Raft simulator, do the following:
 
-A.  Wait until a single leader is established.
+- a. Wait until a single leader is established.
 
-B.  Stop three of the four followers.
+- b. Stop three of the four followers.
 
-C.  Send three requests from the leader, one after the other.
+- c. Send three requests from the leader, one after the other.
 
-D.  Explain to your TA what happened.
-
+***
+**Exercise 7**
+Explain what happened and why.
+***
 **Part 5. Working with hashes**
 
 In the slides on Nakamoto consensus, see
@@ -203,10 +208,12 @@ there is a quiz question that asks:
 
 Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
 
-**Exercise 6**
+***
+**Exercise 8**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
+***
 
 ## Answers to Exercises
 
