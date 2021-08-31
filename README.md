@@ -67,8 +67,8 @@ Copy the TomEE directory to an appropriate directory on your file
 system. The directory path should contain no spaces. Do not change the name of the TomEE Plus directory.
 
 **Configure a "Hello World" web site:**
-0. Using the terminal, cd to apache-tomee-plus-9.0.0-M7/bin
-   and change your permissions: chmod +x *sh
+0. On a MAC, using the terminal, cd to apache-tomee-plus-9.0.0-M7/bin
+   and change your permissions with: chmod +x *sh
 1. Choose New Project.
 2. Choose Java Enterprise.
 3. Name: HelloWorld
