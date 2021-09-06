@@ -128,8 +128,8 @@ with this:
 
 8. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
-9. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /<ProjectName>-1.0-SNAPSHOT
-where <ProjectName> is the name of your project. The <ProjectName> can be looked up in the artifactId of the pom.xml file.
+9. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
+where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
 
 10. Select Apply and OK.
 
