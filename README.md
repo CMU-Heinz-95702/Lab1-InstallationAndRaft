@@ -86,14 +86,14 @@ system. The directory path should contain no spaces. Do not change the name of t
 
 **The Project Window**
 
-1. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
-2. Under webapp you should find index.jsp.
-3. Under webapp/WEB-INF you should find web.xml.
-4. The file pom.xml is near the root of the hierarchy.
+14. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
+15. Under webapp you should find index.jsp.
+16. Under webapp/WEB-INF you should find web.xml.
+17. The file pom.xml is near the root of the hierarchy.
 
 **Steps 5 and 6 are optional if you did not select Jakarta in step 12.**
 
-5. Change your pom.xml by replacing
+18. Change your pom.xml by replacing
 
 ```
         <dependency>
@@ -114,9 +114,9 @@ with this:
             <scope>provided</scope>
         </dependency>
 ```
-6. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
+19. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-7. Choose File/Project Structure/  
+20. Choose File/Project Structure/  
 
    Project Name: HelloWorld  
 
@@ -126,18 +126,18 @@ with this:
 
    Select OK.
 
-8. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
+21. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
-9. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
+22. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
 where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
 
-10. Select Apply and OK.
+23. Select Apply and OK.
 
-11. To run your web application, click the green triangle.
+24. To run your web application, click the green triangle.
 
-12. A test browser should run with Hello World.
+25. A test browser should run with Hello World.
 
-13. In addition, you should also be able to select and run your servlet.
+26. In addition, you should also be able to select and run your servlet.
 ***
 **Exercise 3**
 
