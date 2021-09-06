@@ -128,7 +128,8 @@ with this:
 
 8. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
-9. Change the URL. The URL should read http://localhost:8080/HelloWorld-1.0-SNAPSHOT/
+9. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /<ProjectName>-1.0-SNAPSHOT
+where <ProjectName> is the name of your project. The <ProjectName> can be looked up in the artifactId of the pom.xml file.
 
 10. Select Apply and OK.
 
