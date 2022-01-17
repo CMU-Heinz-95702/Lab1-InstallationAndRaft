@@ -8,6 +8,8 @@ Lab 2 - and the rest - will be due before each Monday lecture.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
+See the two checkered flags below for full credit.
+
 ### Objectives:
 
 In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And fourth, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
@@ -156,7 +158,7 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
-:checkered_flag: This is the checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
+:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
 ### Part 4. Working with Raft
 
@@ -227,7 +229,7 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 Note: There are no newlines or return characters in the correct answer.
 ***
 
-:checkered_flag:  Show any DS TA that you have found a nonce that produces 2 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
 
 ## Answers to Exercises
