@@ -2,13 +2,11 @@
 
 There will be two labs next week.
 
-Lab 1 is due by Friday 1/28/2022 at 1:25 pm. The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA.
+Lab 1 is due by Friday 1/28/2022 at 1:25 pm. The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
-Lab 2 - and the rest - will be due before each Monday lecture.
+Lab 2 - and the rest of the labs - will be due before each Monday lecture.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
-
-See the two checkered flags below for full credit.
 
 ### Objectives:
 
