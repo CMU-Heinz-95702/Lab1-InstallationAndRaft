@@ -1,6 +1,10 @@
 ## 95-702 Distributed Systems Lab 1
 
-You are not required to submit your work for this lab. But, to make progress on the projects and to perform well on the exams, it is essential that you complete it.
+There will be two labs next week.
+
+Lab 1 is due by Friday 1/28/2022 at 1:25 pm. The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA.
+
+Lab 2 - and the rest - will be due before each Monday lecture.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -16,7 +20,7 @@ For those using a Windows operating system, you will need to use a "Pro" or "Edu
 
 When downloading the JDK, be sure to choose OpenJDK 16.
 
-[Download the current version of Java](https://adoptium.net/).
+[Download the JDK 16 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home directory.
@@ -152,6 +156,8 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
+:checkered_flag: This is the checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
+
 ### Part 4. Working with Raft
 
 1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
@@ -220,6 +226,9 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 
 Note: There are no newlines or return characters in the correct answer.
 ***
+
+:checkered_flag:  Show any DS TA that you have found a nonce that produces 2 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+
 
 ## Answers to Exercises
 
