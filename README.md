@@ -148,7 +148,7 @@ where Your-Project-Name is the name of your project. Your project name can be lo
     deployment not found openejb/Deployer
 ```
 then your application does not have write access to a particular directory.
-If you are using Mac OS, please read Part 3 Task 0 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, you need to change a permission setting. See this stack overflow post.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
+If you are using Mac OS, please read Part 3 Task 0 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
 
 ***
 **Exercise 3**
