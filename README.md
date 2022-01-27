@@ -142,6 +142,19 @@ where Your-Project-Name is the name of your project. Your project name can be lo
 25. A test browser should run with Hello World.
 
 26. In addition, you should also be able to select and run your servlet.
+
+27. If you experience a common permission error such as
+```
+    deployment not found openejb/Deployer
+```
+then your application does not have write access to a particular directory.
+If you are using Mac OS, please check part 3 installation of TomEE+. You should provide the write access to apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh".  
+
+If you using Windows, check the following stackoverflow post:
+
+```
+https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer
+```
 ***
 **Exercise 3**
 
@@ -227,7 +240,7 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 Note: There are no newlines or return characters in the correct answer.
 ***
 
-:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
 
 ## Answers to Exercises
