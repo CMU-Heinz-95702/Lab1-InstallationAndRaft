@@ -240,8 +240,9 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 Note: There are no newlines or return characters in the correct answer.
 ***
 
-:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 or 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
+You may choose whether to compute proof of work for 2 or 4 zeroes. Either solution will earn you full credit.
 
 ## Answers to Exercises
 
