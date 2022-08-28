@@ -1,10 +1,12 @@
 ## 95-702 Distributed Systems Lab 1
 
-There will be two labs next week.
 
-Lab 1 is due by Friday 1/28/2022 at 1:25 pm. The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
-Lab 2 - and the rest of the labs - will be due before each Monday lecture.
+Normally, labs are due before the following week's Monday lecture (at 1:25 PM).  Since there is no lecture next week, this lab is due on Monday, September 12 at 1:25 PM.
+
+The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
+
+Lab 2 - and the rest of the labs - will be due before each Monday lecture (at 1:25 PM).
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -18,21 +20,21 @@ For those using a Windows operating system, you will need to use a "Pro" or "Edu
 
 ### Part 1. Installation of Open JDK
 
-When downloading the JDK, be sure to choose OpenJDK 16.
+When downloading the JDK, be sure to choose OpenJDK 17.
 
-[Download the JDK 16 version of Java](https://adoptium.net/).
+[Download the JDK 17 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home directory.
 ```
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 
 ```
 
 On a Windows machine, add a JAVA_HOME environment variable. The value of this variable is the directory path where the JDK was installed.
 
 To test your setup, open the command line shell. From the command line, javac -version and java -version should both
-report the version number as 16.X.X. Be sure that the versions of java and javac are identical. On my machine, I see 16.0.2 for both java and javac.
+report the version number as 17.X.X. Be sure that the versions of java and javac are identical.
 
 ### Part 2. Installation of IntelliJ IDEA Ultimate
 
@@ -42,7 +44,7 @@ The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
 Create a simple Java project:
-1. File/New Project/Project SDK Browse to version 16
+1. File/New Project/Project SDK Browse to version 17
 2. Next/Check Create Project From Template
 3. Next/Name is Lab1Project/Base Project is edu.cmu.andrew.YOURID
 4. Finish
@@ -84,7 +86,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 8. Java, Maven, JUNit should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
-11. Project SDK: 16
+11. Project SDK: 17
 12. Next and select Version: Jakarta EE 9 on the top left.
 13. Select the servlet box and then Finish.
 
@@ -124,9 +126,9 @@ with this:
 
    Project Name: HelloWorld  
 
-   Project: Project SDK 16  
+   Project: Project SDK 17  
 
-   Platform Settings: SDK's choose 16 (Records, patterns...  
+   Platform Settings: SDK's choose 17 (Records, patterns...  
 
    Select OK.
 
