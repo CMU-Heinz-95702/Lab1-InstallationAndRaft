@@ -2,11 +2,10 @@
 
 
 
-Normally, labs are due before the following week's Monday lecture (at 1:25 PM).  Since there is no lecture next week, this lab is due on Monday, September 12 at 1:25 PM.
+Labs are due before the following week's Monday lecture (at 1:25 PM).
 
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
-Lab 2 - and the rest of the labs - will be due before each Monday lecture (at 1:25 PM).
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
