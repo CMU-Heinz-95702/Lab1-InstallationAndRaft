@@ -1,7 +1,5 @@
 ## 95-702 Distributed Systems Lab 1
 
-
-
 Labs are due before the following week's Monday lecture (at 1:25 PM).
 
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
@@ -45,11 +43,10 @@ The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
 Create a simple Java project:
-1. File/New Project/Project SDK Browse to version 17
-2. Next/Check Create Project From Template
-3. Next/Name is Lab1Project/Base Project is edu.cmu.andrew.YOURID
-4. Finish
-5. Enter some Java source and use the green triangle to compile and execute.
+1. New Project/Project SDK Browse to version 17
+2. Check Add Sample Code
+3. Create
+4. Enter some Java source and use the green triangle to compile and execute.
 
 ***
 **Exercise 1**
@@ -75,32 +72,30 @@ system. The directory path should contain no spaces. Do not change the name of t
 
 **Configure a "Hello World" web site:**
 
-0. On a MAC, using the terminal, cd to apache-tomee-plus-9.0.0-M7/bin
-   and change your permissions with: chmod +x *sh
-1. Choose New Project.
-2. Choose Java Enterprise.
+1. On a MAC, using the terminal, cd to apache-tomee-plus-9.0.0-M8/bin and change your permissions with: chmod +x *sh
+2. Choose New Project.
 3. Name: HelloWorld
 4. Change the location if appropriate.
 5. Project Template: Select Web Application
 6. Application server: Click new
-7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M7
+7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M8
 8. Java, Maven, JUNit should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
 11. Project SDK: 17
-12. Next and select Version: Jakarta EE 9 on the top left.
-13. Select the servlet box and then Finish.
+12. Select the servlet box and then Create.
+
 
 **The Project Window**
 
-14. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
-15. Under webapp you should find index.jsp.
-16. Under webapp/WEB-INF you should find web.xml.
-17. The file pom.xml is near the root of the hierarchy.
+13. Under src/main/java should be a package named ds.helloworld containing HelloServlet.java
+14. Under webapp you should find index.jsp.
+15. Under webapp/WEB-INF you should find web.xml.
+16. The file pom.xml is near the root of the hierarchy.
 
 **Steps 5 and 6 are optional if you did not select Jakarta in step 12.**
 
-18. Change your pom.xml by replacing
+17. Change your pom.xml by replacing
 
 ```
         <dependency>
@@ -121,9 +116,9 @@ with this:
             <scope>provided</scope>
         </dependency>
 ```
-19. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
+18. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-20. Choose File/Project Structure/  
+19. Choose File/Project Structure/  
 
    Project Name: HelloWorld  
 
@@ -133,20 +128,20 @@ with this:
 
    Select OK.
 
-21. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
+20. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
 in the top right of the IDE.
-22. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
+21. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
 where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
 
-23. Select Apply and OK.
+22. Select Apply and OK.
 
-24. To run your web application, click the green triangle.
+23. To run your web application, click the green triangle.
 
-25. A test browser should run with Hello World.
+24. A test browser should run with Hello World.
 
-26. In addition, you should also be able to select and run your servlet.
+25. In addition, you should also be able to select and run your servlet.
 
-27. If you experience a common permission error such as
+26. If you experience a common permission error such as
 ```
     deployment not found openejb/Deployer
 ```
