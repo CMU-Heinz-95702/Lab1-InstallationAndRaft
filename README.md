@@ -73,10 +73,10 @@ system. The directory path should contain no spaces. Do not change the name of t
 **Configure a "Hello World" web site:**
 
 1. On a MAC, using the terminal, cd to apache-tomee-plus-9.0.0-M8/bin and change your permissions with: chmod +x *sh
-2. Within IntelliJ, choose New Project.
+2. Within IntelliJ, choose New Project and select Jakarta EE
 3. Name: HelloWorld
 4. Change the location if appropriate.
-5. Project Template: Select Web Application
+5. For the Template: Select Web Application
 6. Application server: Click new
 7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M8
 8. Java, Maven, JUNit should be checked.
