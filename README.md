@@ -221,7 +221,7 @@ Explain what happened and why. Also, explain what happens if the three followers
 ### Part 5. Working with hashes
 
 In the slides on Nakamoto consensus, see
-[1_Blockchain_Raft_and_Nakamoto.pdf](https://canvas.cmu.edu/courses/19194/files/5122183/download?wrap=1),
+[1_Blockchain_Raft_and_Nakamoto.pdf](https://canvas.cmu.edu/courses/30219/files/8228567/download?wrap=1),
 there is a quiz question that asks:
 
 Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
