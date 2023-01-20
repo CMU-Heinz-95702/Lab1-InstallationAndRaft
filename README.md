@@ -5,7 +5,7 @@ Labs are due before the following week's Monday lecture (at 1:25 PM).
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
 For Lab 1 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 only, the lab is due on Monday, September 12, 2022 at 1:25 PM. Note that Lab 2 will likely have the same deadline.
+you do not need to see a specific TA for the .25 points. In addition, for Lab 1 only, the lab is due on Monday, January 30, 2023 at 1:25 PM. Note that Lab 2 will likely have the same deadline.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
