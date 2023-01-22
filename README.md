@@ -1,6 +1,6 @@
 ## 95-702 Distributed Systems Lab 1
 
-Labs are due before the following week's Monday lecture (at 1:25 PM).
+Labs are due before the following week's Monday lecture (at 2:00 PM).
 
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
@@ -68,7 +68,7 @@ and download the TomEE 9 version of **TomEE Plus**
 (Note: "Plus", not "Plume".) Later, you may see TomEE 10 in the IDE - even though you have installed 9. No worries.
 
 Copy the TomEE directory to an appropriate directory on your file
-system. The directory path should contain no spaces. Do not change the name of the TomEE Plus directory.
+system. This is a directory that you have read and write access to. The directory path should contain no spaces. Do not change the name of the TomEE Plus directory.
 
 **Configure a "Hello World" web site:**
 
@@ -79,7 +79,7 @@ system. The directory path should contain no spaces. Do not change the name of t
 5. For the Template: Select Web Application
 6. Application server: Click new
 7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M8
-8. Java, Maven, JUNit should be checked.
+8. Java and Maven should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
 11. Project SDK: 17
@@ -99,8 +99,8 @@ system. The directory path should contain no spaces. Do not change the name of t
 
 ```
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
