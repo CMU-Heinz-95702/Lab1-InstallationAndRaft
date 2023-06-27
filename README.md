@@ -11,7 +11,7 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 ### Objectives:
 
-In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And fourth, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
+In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, TomEE Plus and the Copilot plugin in IntelliJ. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And fourth, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
 
 Answers to all of the exercises appear at the bottom of this lab.
 
@@ -25,6 +25,7 @@ When downloading the JDK, be sure to choose OpenJDK 17.
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home directory.
+
 ```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 
@@ -43,15 +44,18 @@ The "Ultimate" edition is the one we will use.
 Download and install the latest IntelliJ IDEA Ultimate.
 
 Create a simple Java project:
+
 1. New Project/Project SDK Browse to version 17
 2. Check Add Sample Code
 3. Create
 4. Enter some Java source and use the green triangle to compile and execute.
 
 ***
+
 **Exercise 1**
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
+
 ***
 
 **Exercise 2**
@@ -59,6 +63,7 @@ Write a program that imports the MessageDigest class from the java.security pack
 [Visit this SHA256 calculator](https://emn178.github.io/online-tools/sha256.html).
 
 Do you get the same answer form the calculator that you got from the Java program?
+
 ***
 
 ### Part 3. Installation of TomEE+
@@ -72,13 +77,13 @@ system. This is a directory that you have read and write access to. The director
 
 **Configure a "Hello World" web site:**
 
-1. On a MAC, using the terminal, cd to apache-tomee-plus-9.0.0-M8/bin and change your permissions with: chmod +x *sh
+1. On a MAC, using the terminal, cd to apache-tomee-plus-9.1.0-M8/bin and change your permissions with: chmod +x *sh
 2. Within IntelliJ, choose New Project and select Jakarta EE
 3. Name: HelloWorld
 4. Change the location if appropriate.
 5. For the Template: Select Web Application
 6. Application server: Click new
-7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.0.0-M8
+7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.1.0-M8
 8. Java and Maven should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
@@ -98,10 +103,10 @@ system. This is a directory that you have read and write access to. The director
 17. Change your pom.xml by replacing
 
 ```
-        <dependency>
+<dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <version>5.0.0</version>
             <scope>provided</scope>
         </dependency>
 ```
@@ -116,6 +121,7 @@ with this:
             <scope>provided</scope>
         </dependency>
 ```
+
 18. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
 19. Choose File/Project Structure/  
@@ -129,9 +135,9 @@ with this:
    Select OK.
 
 20. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
-in the top right of the IDE.
+    in the top right of the IDE.
 21. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
-where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
+    where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
 
 22. Select Apply and OK.
 
@@ -142,17 +148,21 @@ where Your-Project-Name is the name of your project. Your project name can be lo
 25. In addition, you should also be able to select and run your servlet.
 
 26. If you experience a common permission error such as
+
 ```
     deployment not found openejb/Deployer
 ```
+
 then your application does not have write access to a particular directory.
 If you are using Mac OS, please read Part 3 Task 0 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
 
 ***
+
 **Exercise 3**
 
 Modify your JSP file so that the browser displays the link
 with the label "Compute Hash" instead of "Hello World".
+
 ***
 
 **Exercise 4**
@@ -162,9 +172,41 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
+### Part 4. Installation of Copilot in IntelliJ
+
+To use GitHub Copilot you must first have a GitHub account ([apply here](https://github.com/)) and then have an active GitHub Copilot subscription ([get Copilot here](https://github.com/features/copilot)). You can first use its 30-day free trial. Remember to [cancel the future subscription to GitHub Copilot.](https://docs.github.com/en/billing/managing-billing-for-github-copilot/managing-your-github-copilot-subscription-for-your-personal-account#canceling-your-copilot-for-individuals-subscription)  Because GitHub Copilot is free to use for verified students, afterwards you can establish your student credential with GitHub [here](https://education.github.com/), which might take some time.
+
+To install it in IntelliJ:
+
+1. In your IntelliJ, under the File menu for Windows or under the name of IntelliJ for Mac, click Settings for Windows or Preferences for Mac.
+
+2. In the left-side menu of the Settings/Preferences dialog box, click Plugins
+
+3. At the top of the Settings/Preferences dialog box, click Marketplace. In the search bar, search for GitHub Copilot, then click Install.
+
+4. After GitHub Copilot is installed, click Restart IDE.
+
+5. After your IntelliJ has restarted, click the Tools menu. Click GitHub Copilot, then click Login to GitHub.
+
+6. In the "Sign in to GitHub" dialog box, to copy the device code and open the device activation window, click Copy and Open.
+
+7. A device activation window will open in your browser. Paste the device code, then click Continue.
+
+8. GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click Authorize GitHub Copilot Plugin.
+
+9. After the permissions have been approved, your IntelliJ will show a confirmation. To begin using GitHub Copilot, click OK.
+10. you can have a simple try by typing the following function header in your java file. GitHub Copilot will automatically suggest an entire function body in grayed text. The exact suggestion may vary. To accept the suggestion, press Tab. Or you can click the GitHub Copilot tab on the right sidebar and select the corresponding code block or comment and then click the refresh on the Copilot tab to wait for it to give you more possible solutions.  More usage suggestion can be seen [here](https://docs.github.com/en/copilot/getting-started-with-github-copilot#seeing-your-first-suggestion). 
+
+```
+public void calculateDaysBetweenDates(Date day1, Date day2)
+```
+
+***
+
 :checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
-### Part 4. Working with Raft
+
+### Part 5. Working with Raft
 
 1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
@@ -173,11 +215,12 @@ the SHA-256 Hex string of "Hello World" on the browser.
 3. Set the upper rail to the far left. This is time 0. The simulator allows you to pause execution of the distributed algorithm and go back in time to time 0.
 
 4. One of the followers will time out and request votes.
-A leader will be selected. Let's call the first leader L.
+   A leader will be selected. Let's call the first leader L.
 
 5. Click the leader L and make a request to it.
 
 ***
+
 **Exercise 5**
 
 Explain why the request is not committed on the peers (with dark edges surrounding the term) until after the leader visits twice - once with the request and then a follow up confirmation.
@@ -201,10 +244,14 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 - c. Send four requests from the leader to the remaining followers.
 
 - d. Resume the stopped follower.
+
 ***
+
 **Exercise 6**
 Explain what happened and why.
+
 ***
+
 8. Working with a fresh copy of the Raft simulator, do the following:
 
 - a. Wait until a single leader is established.
@@ -214,11 +261,13 @@ Explain what happened and why.
 - c. Send three requests from the leader, one after the other.
 
 ***
+
 **Exercise 7**
 Explain what happened and why. Also, explain what happens if the three followers are started back up.
+
 ***
 
-### Part 5. Working with hashes
+### Part 6. Working with hashes
 
 In the slides on Nakamoto consensus, see
 [1_Blockchain_Raft_and_Nakamoto.pdf](https://canvas.cmu.edu/courses/30219/files/8228567/download?wrap=1),
@@ -227,10 +276,12 @@ there is a quiz question that asks:
 Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
 
 ***
+
 **Exercise 8**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
+
 ***
 
 :checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 or 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
@@ -277,6 +328,7 @@ public class Main {
     A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
 */
 ```
+
 **Exercise 2 Answer**
 
 Yes. Any correct SHA-256 calculator will provide the same value as that generated by the Java program.
