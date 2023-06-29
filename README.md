@@ -5,7 +5,7 @@ Labs are due before the following week's Monday lecture (at 2:00 PM).
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
 For Lab 1 and 2 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the lab is due on Monday, January 30, 2023 at 2:00 PM. 
+you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the lab is due on Monday, January 30, 2023 at 2:00 PM.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -195,7 +195,7 @@ To install it in IntelliJ:
 8. GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click Authorize GitHub Copilot Plugin.
 
 9. After the permissions have been approved, your IntelliJ will show a confirmation. To begin using GitHub Copilot, click OK.
-10. you can have a simple try by typing the following function header in your java file. GitHub Copilot will automatically suggest an entire function body in grayed text. The exact suggestion may vary. To accept the suggestion, press Tab. Or you can click the GitHub Copilot tab on the right sidebar and select the corresponding code block or comment and then click the refresh on the Copilot tab to wait for it to give you more possible solutions.  More usage suggestion can be seen [here](https://docs.github.com/en/copilot/getting-started-with-github-copilot#seeing-your-first-suggestion). 
+10. You can have a simple try by typing the following function header in your java file. GitHub Copilot will automatically suggest an entire function body in grayed text. The exact suggestion may vary. To accept the suggestion, press Tab. Or you can click the GitHub Copilot tab on the right sidebar and select the corresponding code block or comment and then click the refresh on the Copilot tab to wait for it to give you more possible solutions.  More usage suggestion can be seen [here](https://docs.github.com/en/copilot/getting-started-with-github-copilot#seeing-your-first-suggestion).
 
 ```
 public void calculateDaysBetweenDates(Date day1, Date day2)
