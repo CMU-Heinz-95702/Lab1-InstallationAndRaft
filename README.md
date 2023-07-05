@@ -1,3 +1,5 @@
+# 95-702 Distributed Systems
+
 ## 95-702 Distributed Systems Lab 1
 
 Labs are due before the following week's Monday lecture (at 2:00 PM).
@@ -172,7 +174,24 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
-### Part 4. Installation of Copilot in IntelliJ
+### Part 4. Instruction on how to use Bing AI ChatBot
+
+1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser. 
+2. Visit [bing.com](https://bing.com/) with the Microsoft Edge web browser. 
+3. Sign in with your Microsoft account. Alternatively, you can access Bing Chat without signing in, but in doing so, your chat capabilities will be more limited compared to when you sign in.
+4. Click "Chat" at the top of the page.
+5. Choose a conversation style and type your prompt. More instructions can be seen [here](https://www.howtogeek.com/882581/bing-chat-how-to-use-the-ai-chatbot/).
+6. If you come across error messages stating that "Chat mode is only available when you have access to the new Bing," you can resolve this by following these steps:
+   1. Navigate to Settings.
+   2. Go to Cookies and site permissions.
+   3. Select Manage and delete cookies and site data.
+   4. Locate and click on See all cookies and site data.
+   5. Use the search bar to search for "bing" and click on "Remove all shown."
+   6. Repeat steps 2 to 5.
+
+---
+
+### Part 5. Installation of Copilot in IntelliJ
 
 To use GitHub Copilot you must first have a GitHub account ([apply here](https://github.com/)) and then have an active GitHub Copilot subscription ([get Copilot here](https://github.com/features/copilot)). You can first use its 30-day free trial. Remember to [cancel the future subscription to GitHub Copilot.](https://docs.github.com/en/billing/managing-billing-for-github-copilot/managing-your-github-copilot-subscription-for-your-personal-account#canceling-your-copilot-for-individuals-subscription)  Because GitHub Copilot is free to use for verified students, afterwards you can establish your student credential with GitHub [here](https://education.github.com/), which might take some time.
 
@@ -203,10 +222,26 @@ public void calculateDaysBetweenDates(Date day1, Date day2)
 
 ***
 
+### (Optional) Using ChatGPT and Bing Al in intelliJ IDEA
+
+Using IDE built-in plugin system:
+
+For Windows system, Go to `File` >`Settings` > `Plugins` > `Marketplace` > Search for "ChatGPT Tool" and "ChatGPT BingAI Free GPT-4 Search on New Bing"> Install Plugin
+
+For Mac system, Go to `Preferences` > `Plugins` > `Marketplace` > Search for "ChatGPT Tool"  and "ChatGPT BingAI Free GPT-4 Search on New Bing" > Install Plugin
+
+*notice:*
+
+If you can not login into ChatGPT through your Google account or Microsoft account using ChatGPT Tool plugin, solutions are [here](https://github.com/LiLittleCat/intellij-chatgpt/blob/bring-back-session-token/README.md#-notice).
+
+The language of BingAI plugins might not be in English, but you can ask questions in any language and it would respond correspondingly in that language.
+
+---
+
 :checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
 
-### Part 5. Working with Raft
+### Part 6. Working with Raft
 
 1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
@@ -283,6 +318,17 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 Note: There are no newlines or return characters in the correct answer.
 
 ***
+
+**Exercise 9**
+
+Think about the following questions: 
+
+1. What is the role of the followers in the Raft protocol?
+2. What are some limitations of the Raft protocol?
+
+You can ask these questions to Bing AI Chatbot and see the answers.
+
+---
 
 :checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 or 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
@@ -414,3 +460,18 @@ When the three followers are resumed, they are told of the three requests and th
 109346,5,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
 When hashed with SHA-256, has five, leftmost zeroes.
+
+**Exercise 9 Answer **
+
+1. In the Raft protocol, the followers play an important role in achieving consensus. The followers receive log entries from the leader and replicate them to their local logs. They also respond to the leader’s heartbeat messages to confirm their availability and to reset their election timeout. If a follower does not receive a heartbeat message from the leader within a certain period of time, it assumes that the leader has failed and changes its status to candidate, starting a new election process. During the election process, the candidate requests votes from other servers in the cluster. If a candidate receives votes from a majority of servers, it becomes the new leader. In summary, the role of the followers in the Raft protocol is to replicate log entries from the leader, respond to heartbeat messages, and participate in leader elections.
+
+2. The Raft protocol has some limitations, including:
+
+   - Raft is strictly a single leader protocol. Too much traffic can choke the system.
+   - Raft is not a Byzantine fault-tolerant (BFT) algorithm: the nodes trust the elected leader.
+   - Raft has a restriction in which nodes with the latest submitted logs are only eligible to be leaders.
+
+   These limitations can affect the performance and reliability of the Raft protocol in certain situations.
+
+---
+
