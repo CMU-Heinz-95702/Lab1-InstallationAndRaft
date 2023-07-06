@@ -181,7 +181,7 @@ the SHA-256 Hex string of "Hello World" on the browser.
 3. Sign in with your Microsoft account. Alternatively, you can access Bing Chat without signing in, but in doing so, your chat capabilities will be more limited compared to when you sign in.
 4. Click "Chat" at the top of the page.
 5. Choose a conversation style and type your prompt. More instructions can be seen [here](https://www.howtogeek.com/882581/bing-chat-how-to-use-the-ai-chatbot/).
-6. If you come across error messages stating that "Chat mode is only available when you have access to the new Bing," you can resolve this by following these steps:
+6. If you can not find "Chat" icon at the top of the page in step 4 or you come across error messages stating that "Chat mode is only available when you have access to the new Bing," you can resolve this by following these steps:
    1. Navigate to Settings.
    2. Go to Cookies and site permissions.
    3. Select Manage and delete cookies and site data.
