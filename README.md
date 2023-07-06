@@ -176,8 +176,8 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ### Part 4. Instruction on how to use Bing AI ChatBot
 
-1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser. 
-2. Visit [bing.com](https://bing.com/) with the Microsoft Edge web browser. 
+1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser.
+2. Visit [bing.com](https://bing.com/) with the Microsoft Edge web browser.
 3. Sign in with your Microsoft account. Alternatively, you can access Bing Chat without signing in, but in doing so, your chat capabilities will be more limited compared to when you sign in.
 4. Click "Chat" at the top of the page.
 5. Choose a conversation style and type your prompt. More instructions can be seen [here](https://www.howtogeek.com/882581/bing-chat-how-to-use-the-ai-chatbot/).
@@ -232,13 +232,13 @@ For Mac system, Go to `Preferences` > `Plugins` > `Marketplace` > Search for "Ch
 
 *notice:*
 
-If you can not login into ChatGPT through your Google account or Microsoft account using ChatGPT Tool plugin, solutions are [here](https://github.com/LiLittleCat/intellij-chatgpt/blob/bring-back-session-token/README.md#-notice).
+If you are unable to login into ChatGPT through your Google account or Microsoft account using ChatGPT Tool plugin, solutions are [here](https://github.com/LiLittleCat/intellij-chatgpt/blob/bring-back-session-token/README.md#-notice).
 
 The language of BingAI plugins might not be in English, but you can ask questions in any language and it would respond correspondingly in that language.
 
 ---
 
-:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
+:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4 and that you have copilot working. You will need to do a very quick demonstration for your TA.
 
 
 ### Part 6. Working with Raft
@@ -321,7 +321,7 @@ Note: There are no newlines or return characters in the correct answer.
 
 **Exercise 9**
 
-Think about the following questions: 
+Think about the following questions:
 
 1. What is the role of the followers in the Raft protocol?
 2. What are some limitations of the Raft protocol?
@@ -474,4 +474,3 @@ When hashed with SHA-256, has five, leftmost zeroes.
    These limitations can affect the performance and reliability of the Raft protocol in certain situations.
 
 ---
-
