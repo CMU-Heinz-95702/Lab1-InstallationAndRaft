@@ -7,7 +7,7 @@ Labs are due before the following week's Monday lecture (at 2:00 PM).
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
 For Lab 1 and 2 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the lab is due on Monday, January 30, 2023 at 2:00 PM.
+you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, September 11, 2023 at 2:00 PM.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -174,7 +174,7 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
-### Part 4. Instruction on how to use Bing AI ChatBot
+### Part 4. Instruction on how to use Bing AI ChatBot (Optional)
 
 1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser.
 2. Visit [bing.com](https://bing.com/) with the Microsoft Edge web browser.
@@ -191,7 +191,7 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ---
 
-### Part 5. Installation of Copilot in IntelliJ
+### Part 5. Installation of Copilot in IntelliJ (Optional)
 
 To use GitHub Copilot you must first have a GitHub account ([apply here](https://github.com/)) and then have an active GitHub Copilot subscription ([get Copilot here](https://github.com/features/copilot)). You can first use its 30-day free trial. Remember to [cancel the future subscription to GitHub Copilot.](https://docs.github.com/en/billing/managing-billing-for-github-copilot/managing-your-github-copilot-subscription-for-your-personal-account#canceling-your-copilot-for-individuals-subscription)  Because GitHub Copilot is free to use for verified students, afterwards you can establish your student credential with GitHub [here](https://education.github.com/), which might take some time.
 
@@ -222,7 +222,7 @@ public void calculateDaysBetweenDates(Date day1, Date day2)
 
 ***
 
-### (Optional) Using ChatGPT and Bing Al in intelliJ IDEA
+### Using ChatGPT and Bing Al in intelliJ IDEA (Optional)
 
 Using IDE built-in plugin system:
 
@@ -238,7 +238,7 @@ The language of BingAI plugins might not be in English, but you can ask question
 
 ---
 
-:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4 and that you have copilot working. You will need to do a very quick demonstration for your TA.
+:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
 
 ### Part 6. Working with Raft
@@ -326,7 +326,7 @@ Think about the following questions:
 1. What is the role of the followers in the Raft protocol?
 2. What are some limitations of the Raft protocol?
 
-You can ask these questions to Bing AI Chatbot and see the answers.
+Feel free to ask these questions to Bing AI Chatbot and see the answers. Or, search the web to learn the answers.
 
 ---
 
