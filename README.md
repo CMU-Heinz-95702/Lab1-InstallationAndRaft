@@ -12,9 +12,13 @@ you do not need to see a specific TA for the .25 points. In addition, for Lab 1 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
 This lab has been tested with the following versions:
+
 Java 17.0.10
+
 IntelliJ 2023.3.2
+
 apache-tomee-plus-9.1.2
+
 
 ### Objectives:
 
