@@ -183,6 +183,9 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 ***
 
+
+:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
+
 ### Part 4. Instruction on how to use Bing AI ChatBot (Optional)
 
 1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser.
@@ -246,9 +249,6 @@ If you are unable to login into ChatGPT through your Google account or Microsoft
 The language of BingAI plugins might not be in English, but you can ask questions in any language and it would respond correspondingly in that language.
 
 ---
-
-:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
-
 
 ### Part 6. Working with Raft
 
