@@ -7,9 +7,14 @@ Labs are due before the following week's Monday lecture (at 2:00 PM).
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
 For Lab 1 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, September 11, 2023 at 2:00 PM.
+you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, January 29, 2024 at 2:00 PM.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
+
+This lab has been tested with the following versions:
+Java 17.0.10
+IntelliJ 2023.3.2
+apache-tomee-plus-9.1.2
 
 ### Objectives:
 
@@ -22,6 +27,7 @@ For those using a Windows operating system, you will need to use a "Pro" or "Edu
 ### Part 1. Installation of Open JDK
 
 When downloading the JDK, be sure to choose OpenJDK 17.
+We have tested this lab with Java 17.0.10.
 
 [Download the JDK 17 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
@@ -72,6 +78,7 @@ Do you get the same answer form the calculator that you got from the Java progra
 
 [Visit Apache TOMEE ](http://tomee.apache.org/download-ng.html)
 and download the TomEE 9 version of **TomEE Plus**
+We have tested with TomEE Plus 9.1.2.
 (Note: "Plus", not "Plume".) Later, you may see TomEE 10 in the IDE - even though you have installed 9. No worries.
 
 Copy the TomEE directory to an appropriate directory on your file
@@ -79,18 +86,18 @@ system. This is a directory that you have read and write access to. The director
 
 **Configure a "Hello World" web site:**
 
-1. On a MAC, using the terminal, cd to apache-tomee-plus-9.1.0-M8/bin and change your permissions with: chmod +x *sh
+1. On a MAC only, using the terminal, cd to apache-tomee-plus-X.X.X/bin and change your permissions with: chmod +x *sh
 2. Within IntelliJ, choose New Project and select Jakarta EE
 3. Name: HelloWorld
 4. Change the location if appropriate.
 5. For the Template: Select Web Application
 6. Application server: Click new
-7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.1.0-M8
+7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.1.2
 8. Java and Maven should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
 11. Project SDK: 17
-12. Select the servlet box and then Create.
+12. Select Next and then select the servlet box and then choose Create.
 
 
 **The Project Window**
@@ -99,9 +106,6 @@ system. This is a directory that you have read and write access to. The director
 14. Under webapp you should find index.jsp.
 15. Under webapp/WEB-INF you should find web.xml.
 16. The file pom.xml is near the root of the hierarchy.
-
-**Steps 5 and 6 are optional if you did not select Jakarta in step 12.**
-
 17. Change your pom.xml by replacing
 
 ```
@@ -130,14 +134,15 @@ with this:
 
    Project Name: HelloWorld  
 
-   Project: Project SDK 17  
+   Project: Project SDK 17
+
+   The language level is 17.  
 
    Platform Settings: SDK's choose 17 (Records, patterns...  
 
-   Select OK.
+   Select Apply and OK.
 
-20. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of TomEE 10.0.41
-    in the top right of the IDE.
+20. Select Edit Configurations. The "Edit Configurations" is found by clicking the down arrow just to the right of the TomEE text box in the top right of the IDE.
 21. Go to the deployment tab. Scroll to the bottom. Change the Application Context to /Your-Project-Name-1.0-SNAPSHOT
     where Your-Project-Name is the name of your project. Your project name can be looked up in the artifactId of the pom.xml file.
 
@@ -156,7 +161,7 @@ with this:
 ```
 
 then your application does not have write access to a particular directory.
-If you are using Mac OS, please read Part 3 Task 0 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
+If you are using Mac OS, please read Part 3 Task 1 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
 
 ***
 
