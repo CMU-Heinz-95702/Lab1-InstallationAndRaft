@@ -26,7 +26,20 @@ In this lab, you will do four things: First, you will install the Open JDK, Inte
 
 Answers to all of the exercises appear at the bottom of this lab.
 
-For those using a Windows operating system, you will need to use a "Pro" or "Education" version of Windows (not a "Home" version).
+For those using a Windows operating system, you will need to use a "Pro" or "Education" version of Windows (not a "Home" version). For those with Windows Home, here is how you can update your system to Windows Education. This should leave your existing files alone.
+
+Follow this link : https://azureforeducation.microsoft.com/devtools
+
+Steps :
+1. Sign in using your Andrew ID.
+2. A simple form will show up to verify your identity, fill that accordingly.
+3. Once you are in, Under Learning Resources click on Software and search for Windows 11.
+4. Click on Windows 11 Education version 23H2 and copy the product key
+5. In your local system search bar search for Change Product Key and click on it
+6. Ensure there are no pending updates on your existing Windows OS version
+7. Click on Change Product Key and paste the product key copied from the website.
+8. Start the Upgrade
+
 
 ### Part 1. Installation of Open JDK
 
