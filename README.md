@@ -26,6 +26,8 @@ In this lab, you will do four things: First, you will install the Open JDK, Inte
 
 Answers to all of the exercises appear at the bottom of this lab.
 
+### Part 0. For windows Home users only
+
 For those using a Windows operating system, you will need to use a "Pro" or "Education" version of Windows (not a "Home" version). For those with Windows Home, here is how you can update your system to Windows Education. This should leave your existing files alone.
 
 Follow this link : https://azureforeducation.microsoft.com/devtools
