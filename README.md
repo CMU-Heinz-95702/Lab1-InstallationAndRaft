@@ -42,6 +42,7 @@ Steps :
 7. Click on Change Product Key and paste the product key copied from the website.
 8. Start the Upgrade
 
+Also, for Windows users, when you run IntelliJ, be sure to right click and Run As Administrator.
 
 ### Part 1. Installation of Open JDK
 
