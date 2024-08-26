@@ -13,11 +13,11 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 This lab has been tested with the following versions:
 
-Java 17.0.10
+Java JDK-21.0.4+7
 
-IntelliJ 2023.3.2
+IntelliJ 2024.1
 
-apache-tomee-plus-9.1.2
+apache-tomee-plus-9.1.3
 
 
 ### Objectives:
@@ -47,7 +47,7 @@ Also, for Windows users, when you run IntelliJ, be sure to right click and Run A
 ### Part 1. Installation of Open JDK
 
 When downloading the JDK, be sure to choose OpenJDK Latest LTS Release.
-We have tested this lab with JDK-21.0.4+7..
+We have tested this lab with JDK-21.0.4+7.
 
 [Download the JDK 21 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
