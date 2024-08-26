@@ -2,7 +2,7 @@
 
 ## 95-702 Distributed Systems Lab 1
 
-Labs are due before the following week's Monday lecture (at 2:00 PM).
+Labs are normally due before the following week's Monday lecture (at 2:00 PM).
 
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
