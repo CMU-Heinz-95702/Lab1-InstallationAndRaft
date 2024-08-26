@@ -7,7 +7,7 @@ Labs are due before the following week's Monday lecture (at 2:00 PM).
 The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
 
 For Lab 1 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, January 29, 2024 at 2:00 PM.
+you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, September 9, 2024 at 2:00 PM.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -46,23 +46,23 @@ Also, for Windows users, when you run IntelliJ, be sure to right click and Run A
 
 ### Part 1. Installation of Open JDK
 
-When downloading the JDK, be sure to choose OpenJDK 17.
-We have tested this lab with Java 17.0.10.
+When downloading the JDK, be sure to choose OpenJDK Latest LTS Release.
+We have tested this lab with JDK-21.0.4+7..
 
-[Download the JDK 17 version of Java](https://adoptium.net/).
+[Download the JDK 21 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
 
 On a MAC, JAVA_HOME is set within the .bash_profile of your home directory.
 
 ```
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
 
 ```
 
 On a Windows machine, add a JAVA_HOME environment variable. The value of this variable is the directory path where the JDK was installed.
 
 To test your setup, open the command line shell. From the command line, javac -version and java -version should both
-report the version number as 17.X.X. Be sure that the versions of java and javac are identical.
+report the version number as 21.X.X. Be sure that the versions of java and javac are identical.
 
 ### Part 2. Installation of IntelliJ IDEA Ultimate
 
@@ -73,7 +73,7 @@ Download and install the latest IntelliJ IDEA Ultimate.
 
 Create a simple Java project:
 
-1. New Project/Project SDK Browse to version 17
+1. New Project/Project SDK Browse to version 21
 2. Check Add Sample Code
 3. Create
 4. Enter some Java source and use the green triangle to compile and execute.
@@ -98,8 +98,8 @@ Do you get the same answer form the calculator that you got from the Java progra
 
 [Visit Apache TOMEE ](http://tomee.apache.org/download-ng.html)
 and download the TomEE 9 version of **TomEE Plus**
-We have tested with TomEE Plus 9.1.2.
-(Note: "Plus", not "Plume".) Later, you may see TomEE 10 in the IDE - even though you have installed 9. No worries.
+We have tested with TomEE Plus 10.0.0.
+(Note: "Plus", not "Plume".)
 
 Copy the TomEE directory to an appropriate directory on your file
 system. This is a directory that you have read and write access to. The directory path should contain no spaces. Do not change the name of the TomEE Plus directory.
@@ -112,11 +112,11 @@ system. This is a directory that you have read and write access to. The director
 4. Change the location if appropriate.
 5. For the Template: Select Web Application
 6. Application server: Click new
-7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-9.1.2
+7. From TomEE Server, browse to your TomEE home directory and select OK. Mine looks like this: /Applications/apache-tomee-plus-X.X.X
 8. Java and Maven should be checked.
 9. Set your group to ds
 10. Your artifact should already be set to HelloWorld.
-11. Project SDK: 17
+11. Project SDK: 21
 12. Select Next and then select the servlet box and then choose Create.
 
 
@@ -143,7 +143,7 @@ with this:
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>9.0.0</version>
+            <version>10.0.0</version>
             <scope>provided</scope>
         </dependency>
 ```
@@ -154,11 +154,11 @@ with this:
 
    Project Name: HelloWorld  
 
-   Project: Project SDK 17
+   Project: Project SDK 21
 
-   The language level is 17.  
+   The language level is 21.  
 
-   Platform Settings: SDK's choose 17 (Records, patterns...  
+   Platform Settings: SDK's choose 21 (Records, patterns...  
 
    Select Apply and OK.
 
@@ -181,7 +181,7 @@ with this:
 ```
 
 then your application does not have write access to a particular directory.
-If you are using Mac OS, please read Part 3 Task 1 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-9.0.0-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
+If you are using Mac OS, please read Part 3 Task 1 on the installation of TomEE+. You should provide write access to the apache-tomee-plus-X.X.X-M7/bin folder using "chmod +x *sh". [If you are using Windows, follow this guidance at Stack Overflow.](https://stackoverflow.com/questions/61228214/cannot-start-apache-tomee-server-deployment-not-found-openejb-deployer)
 
 ***
 
@@ -202,71 +202,11 @@ the SHA-256 Hex string of "Hello World" on the browser.
 
 :checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
-### Part 4. Instruction on how to use Bing AI ChatBot (Optional)
+### Part 4. Instruction on how to use Microsoft Copilot (Optional)
 
-1. Install the latest version of [Microsoft Edge](https://www.microsoft.com/en-us/edge/download?form=MA13FJ) in your computer. While you can access Bing from any browser, right now the only way to access the new Bing with ChatGPT functionality via a web browser is to open it in Microsoft's Edge browser.
-2. Visit [bing.com](https://bing.com/) with the Microsoft Edge web browser.
-3. Sign in with your Microsoft account. Alternatively, you can access Bing Chat without signing in, but in doing so, your chat capabilities will be more limited compared to when you sign in.
-4. Click "Chat" at the top of the page.
-5. Choose a conversation style and type your prompt. More instructions can be seen [here](https://www.howtogeek.com/882581/bing-chat-how-to-use-the-ai-chatbot/).
-6. If you can not find "Chat" icon at the top of the page in step 4 or you come across error messages stating that "Chat mode is only available when you have access to the new Bing," you can resolve this by following these steps:
-   1. Navigate to Settings.
-   2. Go to Cookies and site permissions.
-   3. Select Manage and delete cookies and site data.
-   4. Locate and click on See all cookies and site data.
-   5. Use the search bar to search for "bing" and click on "Remove all shown."
-   6. Repeat steps 2 to 5.
+1. Visit https://www.cmu.edu/computing/services/ai/copilot/index.html
 
----
-
-### Part 5. Installation of Copilot in IntelliJ (Optional)
-
-To use GitHub Copilot you must first have a GitHub account ([apply here](https://github.com/)) and then have an active GitHub Copilot subscription ([get Copilot here](https://github.com/features/copilot)). You can first use its 30-day free trial. Remember to [cancel the future subscription to GitHub Copilot.](https://docs.github.com/en/billing/managing-billing-for-github-copilot/managing-your-github-copilot-subscription-for-your-personal-account#canceling-your-copilot-for-individuals-subscription)  Because GitHub Copilot is free to use for verified students, afterwards you can establish your student credential with GitHub [here](https://education.github.com/), which might take some time.
-
-To install it in IntelliJ:
-
-1. In your IntelliJ, under the File menu for Windows or under the name of IntelliJ for Mac, click Settings for Windows or Preferences for Mac.
-
-2. In the left-side menu of the Settings/Preferences dialog box, click Plugins
-
-3. At the top of the Settings/Preferences dialog box, click Marketplace. In the search bar, search for GitHub Copilot, then click Install.
-
-4. After GitHub Copilot is installed, click Restart IDE.
-
-5. After your IntelliJ has restarted, click the Tools menu. Click GitHub Copilot, then click Login to GitHub.
-
-6. In the "Sign in to GitHub" dialog box, to copy the device code and open the device activation window, click Copy and Open.
-
-7. A device activation window will open in your browser. Paste the device code, then click Continue.
-
-8. GitHub will request the necessary permissions for GitHub Copilot. To approve these permissions, click Authorize GitHub Copilot Plugin.
-
-9. After the permissions have been approved, your IntelliJ will show a confirmation. To begin using GitHub Copilot, click OK.
-10. You can have a simple try by typing the following function header in your java file. GitHub Copilot will automatically suggest an entire function body in grayed text. The exact suggestion may vary. To accept the suggestion, press Tab. Or you can click the GitHub Copilot tab on the right sidebar and select the corresponding code block or comment and then click the refresh on the Copilot tab to wait for it to give you more possible solutions.  More usage suggestion can be seen [here](https://docs.github.com/en/copilot/getting-started-with-github-copilot#seeing-your-first-suggestion).
-
-```
-public void calculateDaysBetweenDates(Date day1, Date day2)
-```
-
-***
-
-### Using ChatGPT and Bing Al in intelliJ IDEA (Optional)
-
-Using IDE built-in plugin system:
-
-For Windows system, Go to `File` >`Settings` > `Plugins` > `Marketplace` > Search for "ChatGPT Tool" and "ChatGPT BingAI Free GPT-4 Search on New Bing"> Install Plugin
-
-For Mac system, Go to `Preferences` > `Plugins` > `Marketplace` > Search for "ChatGPT Tool"  and "ChatGPT BingAI Free GPT-4 Search on New Bing" > Install Plugin
-
-*notice:*
-
-If you are unable to login into ChatGPT through your Google account or Microsoft account using ChatGPT Tool plugin, solutions are [here](https://github.com/LiLittleCat/intellij-chatgpt/blob/bring-back-session-token/README.md#-notice).
-
-The language of BingAI plugins might not be in English, but you can ask questions in any language and it would respond correspondingly in that language.
-
----
-
-### Part 6. Working with Raft
+### Part 5. Working with Raft
 
 1. [Visit the Raft Simulator](https://raft.github.io/raftscope/index.html) and experiment with it.
 
