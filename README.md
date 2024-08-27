@@ -13,7 +13,7 @@ If you have difficulty or questions, post your questions to Piazza or see a TA o
 
 This lab has been tested with the following versions:
 
-Java JDK-21.0.4+7
+Java JDK-21.0.4+8
 
 IntelliJ 2024.1
 
@@ -170,7 +170,7 @@ with this:
 
 23. To run your web application, click the green triangle.
 
-24. A test browser should run with Hello World.
+24. A test browser should run with Hello World. Note that the browser may actually opens with the URL 'localhost:8080/HelloWorld_war_exploaded' and you will need to manually edit the url to 'localhost:8080/HelloWorld-1.0-SNAPSHOT' to get the output.
 
 25. In addition, you should also be able to select and run your servlet.
 
