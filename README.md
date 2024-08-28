@@ -426,7 +426,7 @@ When the three followers are resumed, they are told of the three requests and th
 
 When hashed with SHA-256, has five, leftmost zeroes.
 
-**Exercise 9 Answer **
+**Exercise 9 Answer**
 
 1. In the Raft protocol, the followers play an important role in achieving consensus. The followers receive log entries from the leader and replicate them to their local logs. They also respond to the leader’s heartbeat messages to confirm their availability and to reset their election timeout. If a follower does not receive a heartbeat message from the leader within a certain period of time, it assumes that the leader has failed and changes its status to candidate, starting a new election process. During the election process, the candidate requests votes from other servers in the cluster. If a candidate receives votes from a majority of servers, it becomes the new leader. In summary, the role of the followers in the Raft protocol is to replicate log entries from the leader, respond to heartbeat messages, and participate in leader elections.
 
