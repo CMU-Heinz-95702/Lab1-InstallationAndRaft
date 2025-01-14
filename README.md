@@ -2,12 +2,9 @@
 
 ## 95-702 Distributed Systems Lab 1
 
-Labs are normally due before the following week's Monday lecture (at 2:00 PM).
+This lab has an accompanying quiz named Lab1_Quiz on Canvas. It is due in by the date and time shown on the quiz.
 
-The 1/4 point checkpoint is due to your specific TA. The 3/4 point checkpoint can be shown to any TA. See the two checkered flags below to see what needs to be submitted.
-
-For Lab 1 only, you may turn in your lab to any TA for full credit. That is,
-you do not need to see a specific TA for the .25 points. In addition, for Lab 1 and 2 only, the labs are both due on Monday, September 9, 2024 at 2:00 PM.
+During lab time, you may work with others to complete the lab and the quiz.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -22,9 +19,16 @@ apache-tomee-plus-9.1.3
 
 ### Objectives:
 
-In this lab, you will do four things: First, you will install the Open JDK, IntelliJ, TomEE Plus and the Copilot plugin in IntelliJ. These tools will be used throughout much of the course. Second, in order to get familiar with the IDE, you will complete some small programming exercises. Third, to get some hands on experience with distributed consensus, you will complete some exercises using the Raft simulator. And fourth, you will work with cryptographic hashes. The computing of these hashes will come up several times in our course.
+In this lab, you will do four things:
 
-Answers to all of the exercises appear at the bottom of this lab.
+**Install Tools**: You will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course.
+**Familiarize with the IDE**: To get familiar with the IDE, you will complete some small programming exercises.
+**Distributed Consensus Exercises**: You will gain hands-on experience with distributed consensus by completing exercises using the Raft simulator.
+**Cryptographic Hashes**: You will work with cryptographic hashes, which will be a recurring topic in our course.
+
+Answers to all of the in-lab exercises appear at the bottom of this lab.
+
+The Lab1_Quiz on Canvas is designed to accompany this lab and should be completed along the way. As you work through this lab, you should also be working through the quiz. If you need additional time, the Canvas quiz will save prior work.
 
 ### Part 0. For Windows Home users only
 
@@ -84,13 +88,15 @@ Create a simple Java project:
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
+:checkered_flag: Answer question 1 on the Canvas quiz named Lab1_Quiz.
+
 ***
 
 **Exercise 2**
 
 [Visit this SHA256 calculator](https://emn178.github.io/online-tools/sha256.html).
 
-Do you get the same answer form the calculator that you got from the Java program?
+Do you get the same answer from the calculator that you got from the Java program?
 
 ***
 
@@ -197,10 +203,11 @@ with the label "Compute Hash" instead of "Hello World".
 Modify the servlet code so that, when visited, it displays
 the SHA-256 Hex string of "Hello World" on the browser.
 
+:checkered_flag: Answer question 2 on the Canvas quiz named Lab1_Quiz.
+
+
 ***
 
-
-:checkered_flag: This is the 1/4 point checkpoint for this lab. Show your TA that you have a working solution for Exercise 4. You will need to do a very quick demonstration for your TA.
 
 ### Part 4. Instruction on how to use Microsoft Copilot (Optional)
 
@@ -230,10 +237,11 @@ Explain why the request is not committed on the peers (with dark edges surroundi
 
 Make many requests from the same leader. Perform more than 11 requests to leader L and watch the logs on each peer grow. Experiment with the top slider. Drag it left to go back in time.  
 
-6.	Refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in this screen copy:
+6.	By reloading the browser, refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in this screen copy:
 
 <img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>  
 
+:checkered_flag: Answer question 3 on the Canvas quiz named Lab1_Quiz.
 
 7. Working with a fresh copy of the Raft simulator, do the following:
 
@@ -265,7 +273,19 @@ Explain what happened and why.
 **Exercise 7**
 Explain what happened and why. Also, explain what happens if the three followers are started back up.
 
+:checkered_flag: Answer question 4 on the Canvas quiz named Lab1_Quiz.
+
+
 ***
+**Exercise 8**
+
+Think about the following questions:
+
+1. What is the role of the followers in the Raft protocol?
+2. What are some limitations of the Raft protocol?
+
+Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/copilot/index.html)
+
 
 ### Part 6. Working with hashes
 
@@ -277,27 +297,18 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 
 ***
 
-**Exercise 8**
+**Exercise 9**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
 
 ***
 
-**Exercise 9**
 
-Think about the following questions:
-
-1. What is the role of the followers in the Raft protocol?
-2. What are some limitations of the Raft protocol?
-
-Feel free to ask these questions to Bing AI Chatbot and see the answers. Or, search the web to learn the answers.
 
 ---
 
-:checkered_flag:  This is the 3/4 point checkpoint. Show any DS TA that you have found a nonce that produces 2 or 4 leftmost hex 0's for the string: FindThisNonce,4,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
-
-You may choose whether to compute proof of work for 2 or 4 zeroes. Either solution will earn you full credit.
+:checkered_flag: Answer question 5 on the Canvas quiz named Lab1_Quiz.
 
 ## Answers to Exercises
 
@@ -422,11 +433,6 @@ The three request are being held by two machine as tentative and not committed. 
 When the three followers are resumed, they are told of the three requests and the entire cluster comes into consensus.
 
 **Exercise 8 Answer**
-109346,5,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
-
-When hashed with SHA-256, has five, leftmost zeroes.
-
-**Exercise 9 Answer **
 
 1. In the Raft protocol, the followers play an important role in achieving consensus. The followers receive log entries from the leader and replicate them to their local logs. They also respond to the leader’s heartbeat messages to confirm their availability and to reset their election timeout. If a follower does not receive a heartbeat message from the leader within a certain period of time, it assumes that the leader has failed and changes its status to candidate, starting a new election process. During the election process, the candidate requests votes from other servers in the cluster. If a candidate receives votes from a majority of servers, it becomes the new leader. In summary, the role of the followers in the Raft protocol is to replicate log entries from the leader, respond to heartbeat messages, and participate in leader elections.
 
@@ -439,3 +445,9 @@ When hashed with SHA-256, has five, leftmost zeroes.
    These limitations can affect the performance and reliability of the Raft protocol in certain situations.
 
 ---
+
+
+**Exercise 9 Answer**
+109346,5,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
+
+When hashed with SHA-256, has five, leftmost zeroes.
