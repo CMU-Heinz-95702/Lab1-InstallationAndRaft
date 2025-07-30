@@ -16,6 +16,46 @@ IntelliJ 2024.1
 
 apache-tomee-plus-9.1.3
 
+## **Step-by-Step: Install & Use Copilot in IntelliJ**
+
+1. Open IntelliJ → Go to Settings/Preferences
+2. Install the GitHub Copilot Plugin
+- Go to Plugins (in the sidebar)
+
+- Search for GitHub Copilot
+
+- Click Install
+
+- Restart IntelliJ when prompted
+
+3. Authenticate with GitHub
+  
+  After restart:
+
+- IntelliJ will prompt you to sign in with GitHub.
+
+- Click “Sign in with GitHub” → A browser will open → Authorize access
+
+- You’ll see a success message when it’s connected
+
+You must be logged in to a GitHub account with Copilot enabled. CMU-provided GitHub Student Developer Pack should include this.
+
+4. Usage : Inline Code Suggestions
+- Open any Java file
+
+- Start typing a method or comment (e.g. /**)
+
+- Copilot will auto-suggest the rest
+
+- Press Tab to accept, or Esc to ignore
+
+Open View → Tool Windows → GitHub Copilot Chat
+
+You’ll see a chat panel (like ChatGPT inside IntelliJ)
+
+Ask questions like:
+Check if this class follows JavaDoc conventions.
+Suggest feedback for missing or incomplete comments.
 
 ### Objectives:
 
