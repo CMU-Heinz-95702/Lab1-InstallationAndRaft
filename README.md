@@ -16,6 +16,46 @@ IntelliJ 2024.1
 
 apache-tomee-plus-9.1.3
 
+## **Step-by-Step: Install & Use Copilot in IntelliJ**
+
+1. Open IntelliJ → Go to Settings/Preferences
+2. Install the GitHub Copilot Plugin
+- Go to Plugins (in the sidebar)
+
+- Search for GitHub Copilot
+
+- Click Install
+
+- Restart IntelliJ when prompted
+
+3. Authenticate with GitHub
+  
+  After restart:
+
+- IntelliJ will prompt you to sign in with GitHub.
+
+- Click “Sign in with GitHub” → A browser will open → Authorize access
+
+- You’ll see a success message when it’s connected
+
+You must be logged in to a GitHub account with Copilot enabled. CMU-provided GitHub Student Developer Pack should include this.
+
+4. Usage : Inline Code Suggestions
+- Open any Java file
+
+- Start typing a method or comment (e.g. /**)
+
+- Copilot will auto-suggest the rest
+
+- Press Tab to accept, or Esc to ignore
+
+Open View → Tool Windows → GitHub Copilot Chat
+
+You’ll see a chat panel (like ChatGPT inside IntelliJ)
+
+Ask questions like:
+Check if this class follows JavaDoc conventions.
+Suggest feedback for missing or incomplete comments.
 
 ### Objectives:
 
@@ -89,6 +129,21 @@ Create a simple Java project:
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
 :checkered_flag: Answer question 1 on the Canvas quiz named Lab1_Quiz.
+
+## **Submit to Gradescope**
+
+Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
+
+Please ensure:
+
+Your file is named Main.java
+
+Your output matches exactly:
+
+Hello World
+A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
+
+This submission allows us to verify that your environment is set up correctly and that the autograder is working as expected. You will receive immediate feedback on Gradescope.
 
 ***
 
