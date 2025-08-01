@@ -12,7 +12,7 @@ This lab has been tested with the following versions:
 
 Java JDK-21.0.4+8
 
-IntelliJ 2024.1
+IntelliJ 2025.1
 
 apache-tomee-plus-9.1.3
 
