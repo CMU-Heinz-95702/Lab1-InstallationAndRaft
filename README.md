@@ -130,23 +130,6 @@ Write a program that imports the MessageDigest class from the java.security pack
 
 :checkered_flag: Answer question 1 on the Canvas quiz named Lab1_Quiz.
 
-## **Submit to Gradescope**
-
-Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
-
-Please ensure:
-
-Your file is named Main.java
-
-Your output matches exactly:
-
-Hello World
-A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
-
-This submission allows us to verify that your environment is set up correctly and that the autograder is working as expected. You will receive immediate feedback on Gradescope.
-
-***
-
 **Exercise 2**
 
 [Visit this SHA256 calculator](https://emn178.github.io/online-tools/sha256.html).
