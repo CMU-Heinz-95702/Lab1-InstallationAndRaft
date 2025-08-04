@@ -16,6 +16,14 @@ IntelliJ 2025.1
 
 apache-tomee-plus-9.1.3
 
+Also, just a note for future setup consistency — the following versions are being used and will be required for upcoming projects and labs:
+
+Java 21
+
+Apache TomEE 10
+
+Gson 2.9.0
+
 ## **Step-by-Step: Install & Use Copilot in IntelliJ**
 
 1. Open IntelliJ → Go to Settings/Preferences
