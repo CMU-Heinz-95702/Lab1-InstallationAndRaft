@@ -2,9 +2,7 @@
 
 ## 95-702 Distributed Systems Lab 1
 
-This lab has an accompanying quiz named Lab1_Quiz on Canvas. It is due in by the date and time shown on the quiz.
-
-During lab time, you may work with others to complete the lab and the quiz.
+During lab time, you may work with others.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -16,59 +14,18 @@ IntelliJ 2025.1
 
 apache-tomee-plus-9.1.3
 
-## **Step-by-Step: Install & Use Copilot in IntelliJ**
-
-1. Open IntelliJ → Go to Settings/Preferences
-2. Install the GitHub Copilot Plugin
-- Go to Plugins (in the sidebar)
-
-- Search for GitHub Copilot
-
-- Click Install
-
-- Restart IntelliJ when prompted
-
-3. Authenticate with GitHub
-  
-  After restart:
-
-- IntelliJ will prompt you to sign in with GitHub.
-
-- Click “Sign in with GitHub” → A browser will open → Authorize access
-
-- You’ll see a success message when it’s connected
-
-You must be logged in to a GitHub account with Copilot enabled. CMU-provided GitHub Student Developer Pack should include this.
-
-4. Usage : Inline Code Suggestions
-- Open any Java file
-
-- Start typing a method or comment (e.g. /**)
-
-- Copilot will auto-suggest the rest
-
-- Press Tab to accept, or Esc to ignore
-
-Open View → Tool Windows → GitHub Copilot Chat
-
-You’ll see a chat panel (like ChatGPT inside IntelliJ)
-
-Ask questions like:
-Check if this class follows JavaDoc conventions.
-Suggest feedback for missing or incomplete comments.
 
 ### Objectives:
 
 In this lab, you will do four things:
 
-**Install Tools**: You will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course.
+**Install Tools**: You will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. There
+is guidance at the end of this lab on installing CoPilot within IntelliJ.
 **Familiarize with the IDE**: To get familiar with the IDE, you will complete some small programming exercises.
 **Distributed Consensus Exercises**: You will gain hands-on experience with distributed consensus by completing exercises using the Raft simulator.
 **Cryptographic Hashes**: You will work with cryptographic hashes, which will be a recurring topic in our course.
 
 Answers to all of the in-lab exercises appear at the bottom of this lab.
-
-The Lab1_Quiz on Canvas is designed to accompany this lab and should be completed along the way. As you work through this lab, you should also be working through the quiz. If you need additional time, the Canvas quiz will save prior work.
 
 ### Part 0. For Windows Home users only
 
@@ -91,7 +48,7 @@ Also, for Windows users, when you run IntelliJ, be sure to right click and Run A
 ### Part 1. Installation of Open JDK
 
 When downloading the JDK, be sure to choose OpenJDK Latest LTS Release.
-We have tested this lab with JDK-21.0.4+7.
+We have tested this lab with JDK-21.0.4+8.
 
 [Download the JDK 21 version of Java](https://adoptium.net/).
 Set your JAVA_HOME environment variable.
@@ -128,7 +85,7 @@ Create a simple Java project:
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
-:checkered_flag: Answer question 1 on the Canvas quiz named Lab1_Quiz.
+:checkered_flag: This is the .25 point checkpoint. Show your TA that you have a working program (in IntelliJ) that computes the digest of "Hello World".
 
 ## **Submit to Gradescope**
 
@@ -256,15 +213,14 @@ with the label "Compute Hash" instead of "Hello World".
 Modify the servlet code so that, when visited, it displays
 the SHA-256 Hex string of "Hello World" on the browser.
 
-:checkered_flag: Answer question 2 on the Canvas quiz named Lab1_Quiz.
-
+:checkered_flag: This is the .75 point checkpoint. Show a TA that you have a servlet and bowser running together to compute the hash.
 
 ***
 
 
-### Part 4. Instruction on how to use Microsoft Copilot (Optional)
+### Part 4. Here is an important pointer to LLM tools:
 
-1. Visit https://www.cmu.edu/computing/services/ai/copilot/index.html
+[LLM tools](https://www.cmu.edu/computing/services/ai/index.html)
 
 ### Part 5. Working with Raft
 
@@ -294,7 +250,6 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 
 <img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>  
 
-:checkered_flag: Answer question 3 on the Canvas quiz named Lab1_Quiz.
 
 7. Working with a fresh copy of the Raft simulator, do the following:
 
@@ -309,6 +264,7 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 ***
 
 **Exercise 6**
+
 Explain what happened and why.
 
 ***
@@ -324,12 +280,11 @@ Explain what happened and why.
 ***
 
 **Exercise 7**
+
 Explain what happened and why. Also, explain what happens if the three followers are started back up.
 
-:checkered_flag: Answer question 4 on the Canvas quiz named Lab1_Quiz.
-
-
 ***
+
 **Exercise 8**
 
 Think about the following questions:
@@ -337,7 +292,7 @@ Think about the following questions:
 1. What is the role of the followers in the Raft protocol?
 2. What are some limitations of the Raft protocol?
 
-Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/copilot/index.html)
+Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/index.html)
 
 
 ### Part 6. Working with hashes
@@ -361,12 +316,9 @@ Note: There are no newlines or return characters in the correct answer.
 
 ---
 
-:checkered_flag: Answer question 5 on the Canvas quiz named Lab1_Quiz.
-
 ## Answers to Exercises
 
 **Exercise 1 Answer**
-
 
 ```
 package edu.cmu.andrew.yourID;
@@ -504,3 +456,45 @@ When the three followers are resumed, they are told of the three requests and th
 109346,5,19,Pink,Orange,002fdb16086d97e03613fa0caa87b280eca956216e61a35400408bdd3a449e45
 
 When hashed with SHA-256, has five, leftmost zeroes.
+
+
+## **Step-by-Step: Install & Use Copilot in IntelliJ**
+
+1. Open IntelliJ → Go to Settings/Preferences
+2. Install the GitHub Copilot Plugin
+- Go to Plugins (in the sidebar)
+
+- Search for GitHub Copilot
+
+- Click Install
+
+- Restart IntelliJ when prompted
+
+3. Authenticate with GitHub
+
+  After restart:
+
+- IntelliJ will prompt you to sign in with GitHub.
+
+- Click “Sign in with GitHub” → A browser will open → Authorize access
+
+- You’ll see a success message when it’s connected
+
+You must be logged in to a GitHub account with Copilot enabled. CMU-provided GitHub Student Developer Pack should include this.
+
+4. Usage : Inline Code Suggestions
+- Open any Java file
+
+- Start typing a method or comment (e.g. /**)
+
+- Copilot will auto-suggest the rest
+
+- Press Tab to accept, or Esc to ignore
+
+Open View → Tool Windows → GitHub Copilot Chat
+
+You’ll see a chat panel (like ChatGPT inside IntelliJ)
+
+Ask questions like:
+Check if this class follows JavaDoc conventions.
+Suggest feedback for missing or incomplete comments.
