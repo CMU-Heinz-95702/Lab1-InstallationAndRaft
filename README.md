@@ -37,7 +37,7 @@ Steps :
 1. Sign in using your Andrew ID.
 2. A simple form will show up to verify your identity, fill that accordingly.
 3. Once you are in, Under Learning Resources click on Software and search for Windows 11.
-4. Click on Windows 11 Education version 23H2 and copy the product key
+4. Click on Windows 11 Education version 24H2 and copy the product key
 5. In your local system search bar search for Change Product Key and click on it
 6. Ensure there are no pending updates on your existing Windows OS version
 7. Click on Change Product Key and paste the product key copied from the website.
@@ -92,6 +92,8 @@ Write a program that imports the MessageDigest class from the java.security pack
 Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
 
 Please ensure:
+
+There is no package name in your code. We are using the default package.
 
 Your file is named Main.java
 
