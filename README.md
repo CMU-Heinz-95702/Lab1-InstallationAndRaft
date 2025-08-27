@@ -95,6 +95,8 @@ Write a program that imports the MessageDigest class from the java.security pack
 
 Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
 
+Go into Gradescope through our Canvas course.
+
 Please ensure:
 
 There is no package name in your code. We are using the default package.
