@@ -31,7 +31,11 @@ Answers to all of the in-lab exercises appear at the bottom of this lab.
 
 For those using a Windows operating system, you will need to use a "Pro" or "Education" version of Windows (not a "Home" version). For those with Windows Home, here is how you can update your system to Windows Education. This should leave your existing files alone.
 
-Follow this link : https://azureforeducation.microsoft.com/devtools
+Here are the full instructions on how to perform the upgrade. If any students have trouble following these instructions, they can send a ticket to heinz-computing@andrew.cmu.edu.
+
+While you are a student at Heinz, you have access to a Windows 11 Education license through Microsoft Azure Dev Tools. Here are the instructions to access your license:
+
+Follow this link: https://azureforeducation.microsoft.com/devtools  > Sign in with your AndrewID > Complete the sign up form > Select "software" from the bar on the left > Search for "Windows 11 for education" > and then click "View Key". > Copy the key > In the Windows search bar, search "Activation Settings" > Open "Activation Settings" > Click "Change Product Key" > Paste the product key.
 
 Steps :
 1. Sign in using your Andrew ID.
