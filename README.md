@@ -31,21 +31,12 @@ Answers to all of the in-lab exercises appear at the bottom of this lab.
 
 For those using a Windows operating system, you will need to use a "Pro" or "Education" version of Windows (not a "Home" version). For those with Windows Home, here is how you can update your system to Windows Education. This should leave your existing files alone.
 
-Here are the full instructions on how to perform the upgrade. If any students have trouble following these instructions, they can send a ticket to heinz-computing@andrew.cmu.edu.
+Here are the full instructions on how to perform the upgrade. If you have trouble with the upgrade, you may send a ticket to
+heinz-computing@andrew.cmu.edu.
 
 While you are a student at Heinz, you have access to a Windows 11 Education license through Microsoft Azure Dev Tools. Here are the instructions to access your license:
 
 Follow this link: https://azureforeducation.microsoft.com/devtools  > Sign in with your AndrewID > Complete the sign up form > Select "software" from the bar on the left > Search for "Windows 11 for education" > and then click "View Key". > Copy the key > In the Windows search bar, search "Activation Settings" > Open "Activation Settings" > Click "Change Product Key" > Paste the product key.
-
-Steps :
-1. Sign in using your Andrew ID.
-2. A simple form will show up to verify your identity, fill that accordingly.
-3. Once you are in, Under Learning Resources click on Software and search for Windows 11.
-4. Click on Windows 11 Education version 24H2 and copy the product key
-5. In your local system search bar search for Change Product Key and click on it
-6. Ensure there are no pending updates on your existing Windows OS version
-7. Click on Change Product Key and paste the product key copied from the website.
-8. Start the Upgrade
 
 Also, for Windows users, when you run IntelliJ, be sure to right click and Run As Administrator.
 
