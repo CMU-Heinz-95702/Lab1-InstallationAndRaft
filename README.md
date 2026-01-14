@@ -99,9 +99,10 @@ There is no package name in your code. We are using the default package.
 
 Your file is named Main.java
 
-Your output matches exactly:
+Your output matches Hello World <new line> hex string. See the output:
 
 Hello World
+
 A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
 
 This submission allows us to verify that your environment is set up correctly and that the autograder is working as expected. You will receive immediate feedback on Gradescope.
