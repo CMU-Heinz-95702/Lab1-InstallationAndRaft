@@ -99,7 +99,7 @@ There is no package name in your code. We are using the default package.
 
 Your file is named Main.java
 
-Your output matches Hello World <new line> hex string. See the output:
+Your output matches Hello World hex string. There is one newline after the string Hello World.
 
 Hello World
 
