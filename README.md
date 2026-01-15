@@ -299,7 +299,8 @@ Think about the following questions:
 1. What is the role of the followers in the Raft protocol?
 2. What are some limitations of the Raft protocol?
 
-Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/index.html)
+Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/tools/index.html)
+
 
 ### Part 6. Working with hashes
 
@@ -310,8 +311,6 @@ there is a quiz question that asks:
 Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
 
 See Exercise 9.
-
-
 
 **Exercise 9**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
