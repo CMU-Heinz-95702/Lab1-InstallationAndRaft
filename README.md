@@ -89,7 +89,7 @@ Write a program that imports the MessageDigest class from the java.security pack
 
 ## **Submit to Gradescope**
 
-Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
+Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test. Note that the name Main begins with a capital letter.
 
 Go into Gradescope through our Canvas course.
 
@@ -128,7 +128,7 @@ system. This is a directory that you have read and write access to. The director
 **Configure a "Hello World" web site:**
 
 1. On a MAC only, using the terminal, cd to apache-tomee-plus-X.X.X/bin and change your permissions with: chmod +x *sh
-2. Within IntelliJ, choose New Project and select Jakarta EE
+2. Within IntelliJ, choose New Project and select Jakarta EE (if you do not see this option, you may need to register your ultimate edition with JetBrains).
 3. Name: HelloWorld
 4. Change the location if appropriate.
 5. For the Template: Select Web Application
