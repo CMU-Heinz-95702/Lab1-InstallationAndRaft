@@ -99,12 +99,12 @@ There is no package name in your code. We are using the default package.
 
 Your file is named Main.java
 
-Your output matches Hello World hex string. There is one newline after the string Hello World.
+Your output matches Hello World followed by a hex string. There is one newline after the string Hello World.
 
+```
 Hello World
-
 A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
-
+```
 This submission allows us to verify that your environment is set up correctly and that the autograder is working as expected. You will receive immediate feedback on Gradescope.
 
 **Exercise 2**
@@ -332,7 +332,6 @@ Note: There are no newlines or return characters in the correct answer.
 
 
 ```
-package edu.cmu.andrew.yourID;
 
 import java.security.MessageDigest;
 
