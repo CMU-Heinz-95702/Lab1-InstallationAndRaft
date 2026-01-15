@@ -311,18 +311,12 @@ Quiz: Which of the blocks on the right can be the next block in the chain of len
 
 See Exercise 9.
 
-***
+
 
 **Exercise 9**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
-
-***
-
-
-
----
 
 :checkered_flag: Answer question 5 on the Canvas quiz named Lab1_Quiz.
 
