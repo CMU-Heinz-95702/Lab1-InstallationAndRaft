@@ -2,9 +2,7 @@
 
 ## 95-702 Distributed Systems Lab 1
 
-This lab has an accompanying quiz named Lab1_Quiz on Canvas. It is due in by the date and time shown on the quiz.
-
-During lab time, you may work with others to complete the lab and the quiz.
+During lab time, you may work with others.
 
 If you have difficulty or questions, post your questions to Piazza or see a TA or an instructor during office hours or during the class time set aside for lab work.
 
@@ -21,15 +19,13 @@ apache-tomee-plus-9.1.3
 
 In this lab, you will do four things:
 
-**Install Tools**: You will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course.
+**Install Tools**: You will install Open JDK, IntelliJ, and TomEE Plus. These tools will be used throughout much of the course. There
+is guidance at the end of this lab on installing CoPilot within IntelliJ.
 **Familiarize with the IDE**: To get familiar with the IDE, you will complete some small programming exercises.
 **Distributed Consensus Exercises**: You will gain hands-on experience with distributed consensus by completing exercises using the Raft simulator.
 **Cryptographic Hashes**: You will work with cryptographic hashes, which will be a recurring topic in our course.
 
 Answers to all of the in-lab exercises appear at the bottom of this lab.
-
-The Lab1_Quiz on Canvas is designed to accompany this lab and should be completed along the way. As you work through this lab, you should also be working through the quiz. If you need additional time, the Canvas quiz will save prior work.
-
 
 ### Part 0. For Windows Home users only
 
@@ -43,7 +39,6 @@ While you are a student at Heinz, you have access to a Windows 11 Education lice
 Follow this link: https://azureforeducation.microsoft.com/devtools  > Sign in with your AndrewID > Complete the sign up form > Select "software" from the bar on the left > Search for "Windows 11 for education" > and then click "View Key". > Copy the key > In the Windows search bar, search "Activation Settings" > Open "Activation Settings" > Click "Change Product Key" > Paste the product key.
 
 Also, for Windows users, when you run IntelliJ, be sure to right click and Run As Administrator.
-
 
 ### Part 1. Installation of Open JDK
 
@@ -85,11 +80,11 @@ Create a simple Java project:
 
 Write a program that imports the MessageDigest class from the java.security package. Use the MessageDigest class to compute and display the SHA-256 digest of "Hello World". (A possible answer is below.)
 
-:checkered_flag: Answer question 1 on the Canvas quiz named Lab1_Quiz.
+:checkered_flag: This is the .25 point checkpoint. Show your TA that you have a working program (in IntelliJ) that computes the digest of "Hello World".
 
 ## **Submit to Gradescope**
 
-Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test. Note that the name Main begins with a capital letter.
+Once you’ve completed and tested your Main.java program, submit it to the Gradescope assignment titled Lab1_Submission_Test.
 
 Go into Gradescope through our Canvas course.
 
@@ -99,12 +94,11 @@ There is no package name in your code. We are using the default package.
 
 Your file is named Main.java
 
-Your output matches Hello World followed by a hex string. There is one newline after the string Hello World.
+Your output matches exactly:
 
-```
 Hello World
 A591A6D40BF420404A011733CFB7B190D62C65BF0BCDA32B57B277D9AD9F146E
-```
+
 This submission allows us to verify that your environment is set up correctly and that the autograder is working as expected. You will receive immediate feedback on Gradescope.
 
 **Exercise 2**
@@ -128,7 +122,7 @@ system. This is a directory that you have read and write access to. The director
 **Configure a "Hello World" web site:**
 
 1. On a MAC only, using the terminal, cd to apache-tomee-plus-X.X.X/bin and change your permissions with: chmod +x *sh
-2. Within IntelliJ, choose New Project and select Jakarta EE (if you do not see this option, you may need to register your ultimate edition with JetBrains).
+2. Within IntelliJ, choose New Project and select Jakarta EE
 3. Name: HelloWorld
 4. Change the location if appropriate.
 5. For the Template: Select Web Application
@@ -171,15 +165,15 @@ with this:
 
 18. The jakarta.platform may be in red. In any case, go to View/Tool Windows/Maven/click circular arrow icon "reload all Maven projects". Close that window by clicking the minus sign.
 
-19. Choose File/Project Structure/
+19. Choose File/Project Structure/  
 
-   Project Name: HelloWorld
+   Project Name: HelloWorld  
 
    Project: Project SDK 21
 
-   The language level is 21.
+   The language level is 21.  
 
-   Platform Settings: SDK's choose 21 (Records, patterns...
+   Platform Settings: SDK's choose 21 (Records, patterns...  
 
    Select Apply and OK.
 
@@ -218,15 +212,14 @@ with the label "Compute Hash" instead of "Hello World".
 Modify the servlet code so that, when visited, it displays
 the SHA-256 Hex string of "Hello World" on the browser.
 
-:checkered_flag: Answer question 2 on the Canvas quiz named Lab1_Quiz.
-
+:checkered_flag: This is the .75 point checkpoint. Show a TA that you have a servlet and bowser running together to compute the hash.
 
 ***
+
 
 ### Part 4. Here is an important pointer to LLM tools:
 
 [LLM tools](https://www.cmu.edu/computing/services/ai/index.html)
-
 
 ### Part 5. Working with Raft
 
@@ -250,13 +243,12 @@ Explain why the request is not committed on the peers (with dark edges surroundi
 ***
 
 
-Make many requests from the same leader. Perform more than 11 requests to leader L and watch the logs on each peer grow. Experiment with the top slider. Drag it left to go back in time.
+Make many requests from the same leader. Perform more than 11 requests to leader L and watch the logs on each peer grow. Experiment with the top slider. Drag it left to go back in time.  
 
 6.	By reloading the browser, refresh the simulator. Experiment and get the Raft simulator to show the following replicated logs. Note, the final server need not be S1. The only requirement is that each log is identical to the one shown in this screen copy:
 
-<img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>
+<img src="https://github.com/CMU-Heinz-95702/Lab1-InstallationAndRaft/blob/master/images/Figure1.png" alt="Experiment with Raft" width="400" height="400"/>  
 
-:checkered_flag: Answer question 3 on the Canvas quiz named Lab1_Quiz.
 
 7. Working with a fresh copy of the Raft simulator, do the following:
 
@@ -271,7 +263,8 @@ Make many requests from the same leader. Perform more than 11 requests to leader
 ***
 
 **Exercise 6**
-Be able to explain what happened and why.
+
+Explain what happened and why.
 
 ***
 
@@ -286,12 +279,11 @@ Be able to explain what happened and why.
 ***
 
 **Exercise 7**
-Be able to explain what happened and why. Also, explain what happens if the three followers are started back up.
 
-:checkered_flag: Answer question 4 on the Canvas quiz named Lab1_Quiz.
-
+Explain what happened and why. Also, explain what happens if the three followers are started back up.
 
 ***
+
 **Exercise 8**
 
 Think about the following questions:
@@ -299,7 +291,7 @@ Think about the following questions:
 1. What is the role of the followers in the Raft protocol?
 2. What are some limitations of the Raft protocol?
 
-Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/tools/index.html)
+Ask these questions to Copilot and read the answers. [Copilot may be accessed from here.](https://www.cmu.edu/computing/services/ai/index.html)
 
 
 ### Part 6. Working with hashes
@@ -310,21 +302,25 @@ there is a quiz question that asks:
 
 Quiz: Which of the blocks on the right can be the next block in the chain of length 2? Format: Nonce,Difficulty,id,Tx1,Tx2,HashPointer
 
-See Exercise 9.
+***
 
 **Exercise 9**
 [Use the SHA256 calculator that you used before](https://emn178.github.io/online-tools/sha256.html) to answer the quiz question on the slides.
 
 Note: There are no newlines or return characters in the correct answer.
 
-:checkered_flag: Answer question 5 on the Canvas quiz named Lab1_Quiz.
+***
+
+
+
+---
 
 ## Answers to Exercises
 
 **Exercise 1 Answer**
 
-
 ```
+package edu.cmu.andrew.yourID;
 
 import java.security.MessageDigest;
 
@@ -460,7 +456,8 @@ When the three followers are resumed, they are told of the three requests and th
 
 When hashed with SHA-256, has five, leftmost zeroes.
 
-## **Optional: Using Copilot in IntelliJ**
+
+## **Step-by-Step: Install & Use Copilot in IntelliJ**
 
 1. Open IntelliJ → Go to Settings/Preferences
 2. Install the GitHub Copilot Plugin
